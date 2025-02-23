@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+        }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    }
+    header img {
+      height: 40px;
+    }
+    header nav {
+      display: flex;
+      gap: 20px;
+    }
+    header a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    header nav .button {
+    background-color: #ff7f50;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+}
+
+    .price-box{
+        /* background-color: #e88383; */
+        display: flex;
+        justify-content: space-around;
+        height: 400px;
+        width:auto;
+        padding: 0;
+        margin: 0;
+    }
+
+   
+    .content1 {
+        margin-top: 0px;
+        height: 300px;
+        width: 270px;
+    }
+    .content1 img{
+      width: 500px;
+    }
+   
+
+
+    form {
+      max-width: 500px;
+      height: 150px;
+      margin: 0 auto;
+      background: #f9f9b7;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0px;
+      border: 1px solid #f79191;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #f7b860;
+      /* color: white; */
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #d39a3f;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <nav>
+          <a href="{{ url_for('auth.product') }}">Products</a>
+          <a href="#">Solutions</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="{{ url_for('auth.company') }}">Company</a>
+          <a href="#" class="button">Try For Free</a>
+        </nav>
+      </header>
+    <main>
+        <section>
+            <div class="price-box">
+            <div class="content1">
+              <img src="static/price.jpg" alt="">
+                <!-- <h1>Unlock Your Perfect Prices by Simply Entering the Number of SKUs You Need!</h1> -->
+            </div>
+            <div class="price-calculator">
+                <h2>Price Calculator</h2>
+                <div class="calculator">
+                    <form id="sku-price-calculator">
+                        <input type="number" id="number" name="number" placeholder="Enter the No. of SKUs" required>
+                        <button type="submit">Get the Price</button>
+                      </form>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
