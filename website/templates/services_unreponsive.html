@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body {
+        body{
             margin: 0;
             padding: 0;
             overflow-x: hidden;
         }
 
         header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 15px 30px;
-            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-        }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    }
+    
+    header img {
+      height: 40px;
+    }
 
-        header img {
-            height: 40px;
-        }
+    header nav {
+      display: flex;
+      gap: 50px;
+    }
 
-        header nav {
-            display: flex;
-            gap: 50px;
-        }
-
-        header nav a {
-            font-size: 3.5vh;
-            color: black;
-            text-decoration: none;
-        }
-
-        #sec-1 {
+    header nav a{
+        font-size: 3.5vh;
+        color: black;
+        text-decoration: none;
+    }
+        #sec-1{
             padding: 0;
             margin: 0;
             display: flex;
@@ -45,20 +43,17 @@
             width: 100%;
             height: 700px;
         }
-
-        .content-1 h1 {
+        .content-1 h1{
             text-align: center;
-            font-size: 8vh;
+            font-size: 8vh; 
         }
-
-        .content-1 p {
+        .content-1 p{
             position: relative;
             top: -20px;
             text-align: center;
             font-size: 3vh;
         }
-
-        .images1 {
+        .images1{
             /* background-color: #fff; */
             position: relative;
             top: 40px;
@@ -68,34 +63,32 @@
             justify-content: center;
             gap: 0px;
 
-
+            
         }
-
-        .images1 .img1 {
+        .images1 .img1{
             /* background-color: #dd8282; */
             display: flex;
             flex-direction: column;
             width: 430px;
-
-
+            
+            
         }
 
-        .img1 img {
+        .img1 img{
             position: relative;
             left: 0px;
             width: 400px;
             padding: 0px;
-
+            
 
         }
-
-        .text-1 {
+        .text-1{
             padding: 10px;
             position: relative;
             left: 0px;
         }
 
-        #sec-2 {
+        #sec-2{
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -103,26 +96,26 @@
             margin-top: 50px;
         }
 
-        .images2 {
+        .images2{
             margin-left: -50px;
         }
 
-        .content-2 {
+        .content-2{
             align-items: center;
             text-align: center;
             margin-top: 4.5%;
-
+        
         }
 
-        .content-2 h2 {
+        .content-2 h2{
             font-size: 7vh;
         }
 
-        .content-2 p {
+        .content-2 p{
             font-size: 3vh;
         }
 
-        #sec-3 {
+        #sec-3{
             margin-top: 20px;
             display: flex;
             flex-direction: column;
@@ -130,54 +123,52 @@
             align-items: center;
         }
 
-        .content-3 h1 {
+        .content-3 h1{
             margin-top: 100px;
             text-align: center;
-            font-size: 7vh;
+            font-size: 7vh; 
         }
 
-        .content-3 p {
+        .content-3 p{
             position: relative;
             top: -20px;
             text-align: center;
             font-size: 3vh;
         }
 
-        .images3 {
-
+        .images3{
+           
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            /* gap: 10px; */
-            justify-content: center;
-            width: 80%;
-            position: relative;
-            top: -30px;
-            gap: 70px;
-            padding: 100px;
-            margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 10px; */
+    justify-content: center;
+    width: 80%;
+    position: relative;
+    top: -30px;
+    gap: 70px;
+    padding: 100px;
+    margin: 0;
         }
-
-        .images3 .img3 {
+        
+        .images3 .img3{
             padding: 0;
             margin: 0;
             /* width: 500px; */
             /* background-color: #ba7d7d; */
             display: flex;
             flex-direction: column;
-
+            
         }
-
-        .img3-sub {
-            width: 460px;
-            height: 240px;
-            overflow: hidden;
+        .img3-sub{
+            width: 460px; 
+            height: 240px; 
+            overflow:hidden;
             /* border: 1px solid #000; */
             display: flex;
             flex-direction: row;
             border-radius: 10px;
         }
-
-        .img3-sub img {
+        .img3-sub img{
             width: 460px;
             object-fit: cover;
         }
@@ -188,143 +179,8 @@
             flex-direction: row;
             justify-content: space-between;
         } */
-
-
-        /* Responsive Styles (Add this at the end of your <style> block) */
-        @media (max-width: 1200px) {
-            #sec-1{
-                height: 1000px;
-            }
-
-            .images1 {
-                flex-wrap: wrap;
-                gap: 20px;
-            }
-
-            .images1 .img1 {
-                width: 45%;
-            }
-
-            .img1 img {
-                width: 100%;
-            }
-
-            #sec-2 {
-                flex-direction: column;
-                align-items: center;
-                gap: 30px;
-                margin-top: 30px;
-            }
-
-            .images2 img {
-                width: 100%;
-                height: auto;
-            }
-
-            .content-2 {
-                margin-top: 20px;
-            }
-
-            .images3 {
-                grid-template-columns: repeat(2, 1fr);
-                margin-left: 5%;
-                gap: 50px;
-                padding: 50px;
-            }
-
-            .img3-sub {
-                width: 100%;
-                height: auto;
-            }
-
-            .img3-sub img {
-                width: 100%;
-                height: 200px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            header nav {
-                gap: 20px;
-            }
-
-            header nav a {
-                font-size: 2.5vh;
-            }
-
-            #sec-1{
-                height: 1400px;
-            }
-            .content-1 h1 {
-                font-size: 6vh;
-            }
-
-            .content-1 p {
-                font-size: 2.5vh;
-            }
-
-            .images1 .img1 {
-                width: 90%;
-            }
-
-            .content-2 h2 {
-                font-size: 5vh;
-            }
-
-            .content-2 p {
-                font-size: 2.5vh;
-            }
-
-            .content-3 h1 {
-                font-size: 5vh;
-            }
-
-            .content-3 p {
-                font-size: 2.5vh;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .content-1 h1 {
-                font-size: 5vh;
-            }
-
-            .content-1 p {
-                font-size: 2vh;
-            }
-
-            .images1 .img1 {
-                width: 100%;
-            }
-
-            .content-2 h2 {
-                font-size: 4vh;
-            }
-
-            .content-2 p {
-                font-size: 2vh;
-            }
-
-            .content-3 h1 {
-                font-size: 4vh;
-            }
-
-            .content-3 p {
-                font-size: 2vh;
-            }
-
-            .images3 {
-                padding: 20px;
-            }
-        }
     </style>
 </head>
-
 <body>
     <header>
         <!-- <h1>Logo</h1> -->
@@ -340,29 +196,28 @@
     <section class="sec1" id="sec-1">
         <div class="content-1">
             <h1>Competitive Analysis Insights</h1>
-            <p>We provide detailed competitor insights through data scraping and analysis,<br>enhancing your strategic
-                decision-making processes.</p>
+            <p>We provide detailed competitor insights through data scraping and analysis,<br>enhancing your strategic decision-making processes.</p>
         </div>
         <div class="images1">
             <div class="img1">
                 <img src="../static/contact.jpg" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
                 <div class="text-1">
                     <h2>Data Scraping Services</h2>
-                    <p>Our data scraping services deliver comprehensive reports on stock, pricing, and inventory metrics for insights.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, aspernatur laudantium. Ea.</p>
                 </div>
             </div>
             <div class="img1">
                 <img src="../static/pic1.jpeg" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
                 <div class="text-1">
-                    <h2>Analytical Reporting Services</h2>
-                    <p>We generate in-depth analytical reports that help you understand market trends and competitor performance effectively.</p>
+                    <h2>Data Scraping Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, aspernatur laudantium. Ea.</p>
                 </div>
             </div>
             <div class="img1">
                 <img src="../static/spic5.jpeg" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
                 <div class="text-1">
-                    <h2>Market Trend Analysis</h2>
-                    <p>Our services empower businesses with the insights needed to stay ahead in dynamic market conditions.</p>
+                    <h2>Data Scraping Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing<br>elit. Quidem, aspernatur laudantium. Ea.</p>
                 </div>
             </div>
         </div>
@@ -379,8 +234,7 @@
                 <span class="fa fa-star checked "></span>
                 <span class="fa fa-star checked "></span>
             </p>
-            <p>Priceprive provided invaluable insights that transformed our competitive <br> strategy and improved our
-                market positioning significantly.</p>
+            <p>Priceprive provided invaluable insights that transformed our competitive <br> strategy and improved our market positioning significantly.</p>
             <div class="logo-5">
                 <!-- <img src="" alt=""> -->
                 John Doe
@@ -435,5 +289,4 @@
 
     </section>
 </body>
-
 </html>

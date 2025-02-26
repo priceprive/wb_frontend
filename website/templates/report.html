@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
+           
         }
 
         header {
@@ -34,11 +37,12 @@
     }
 
     #sec-1{
+       
         display: flex;
         flex-direction: row;
         gap: 30px;
         margin-left: 30px;
-        margin-right: 5px;
+        margin-right: 15px;
     
         /* padding: 50px; */
     }
@@ -53,7 +57,7 @@
     }
 
     .box-1 img{
-        width: 570px; 
+        width: 560px; 
         height: 320px;
         /* height: 247px;  */
         
@@ -102,7 +106,9 @@
         display: flex;
         flex-direction: row;
         margin-top: 70px;
-        margin-left: 50px;
+        /* margin-left: 50px; */
+        margin-left: 30px;
+        margin-right: 15px;
     }
 
     
@@ -132,6 +138,213 @@
         text-align: center;
     }
 
+
+    /* Responsive Styles (Add this at the end of your <style> block) */
+        @media (max-width: 1200px) {
+        #sec-1 {
+            flex-direction: row;
+            align-items: center;
+            gap: 60px;
+            /* margin-left: 0;
+            margin-right: 0; */
+            justify-content: center;
+            margin-left: 30px;
+            margin-right: 15px;
+        }
+
+        .box-1 {
+            width: 40%;
+        }
+
+        .box-1 img {
+            margin: 20px;
+            width: 96%;
+            height: 250px;
+        }
+
+        .box-1 .text-1 h1 {
+            font-size: 3.5vh;
+        }
+
+        .box-1 .text-1 p {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        #sec-2 {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        /* .box2-2{
+            display: flex;
+            flex-direction: ;
+        } */
+
+        .box2-2 .img-box-2 {
+            flex-direction: row;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .img-box-2 img {
+            width: 40%;
+            height: auto;
+        }
+
+        #sec-3 {
+            flex-direction: row;
+            align-items: center;
+            /* margin-left: 0;
+            margin-right: 0; */
+            margin-left: 30px;
+            margin-right: 15px;
+            
+        }
+
+        .sec-3 img {
+            width: 45%;
+            height: 296px;
+            margin-left: 20px;
+        }
+
+        .sec-3 .box-3 {
+            width: 100%;
+            height: 255.7px;
+            padding: 20px;
+        }
+
+        .box-3 p {
+            margin-left: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        header nav {
+            gap: 20px;
+        }
+
+        header nav a {
+            font-size: 2.5vh;
+        }
+
+        #sec-1 {
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+            /* margin-left: 0;
+            margin-right: 0; */
+            margin-left: 30px;
+            margin-right: 15px;
+            justify-content: center;
+        }
+
+        .box-1 img {
+            margin: 20px;
+            width: 70%;
+            height: 250px;
+        }
+
+        
+
+        .box-1 {
+            width: 90%;
+        }
+
+        .box-1 .text-1 h1 {
+            font-size: 3vh;
+        }
+
+        .box-1 .text-1 p {
+            font-size: 12px;
+        }
+
+        .box-2 .text-2 h1 {
+            font-size: 4vh;
+        }
+
+        #sec-3 {
+            flex-direction: row;
+            align-items: center;
+            /* margin-left: 0;
+            margin-right: 0; */
+            margin-left: 16px;
+            margin-right: 20px;
+            
+        }
+
+        .sec-3 img {
+            width: 45%;
+            height: 266px;
+            margin-left: 20px;
+        }
+
+        .sec-3 .box-3 {
+            width: 100%;
+            height: 226px;
+            padding: 20px;
+        }
+        
+        .box-3 h1 {
+            font-size: 4vh;
+        }
+
+        .box-3 p {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .box-1 {
+            width: 100%;
+        }
+
+        .box-1 .text-1 h1 {
+            font-size: 2.5vh;
+        }
+
+        .box-1 .text-1 p {
+            font-size: 10px;
+        }
+
+        .box-2 .text-2 h1 {
+            font-size: 3vh;
+        }
+
+        #sec-3 {
+            flex-direction: row;
+            align-items: center;
+            /* margin-left: 0;
+            margin-right: 0; */
+            margin-left: 20px;
+            margin-right: 15px;
+            
+        }
+
+        .sec-3 img {
+            width: 45%;
+            height: 296px;
+            margin-left: 20px;
+        }
+
+        .sec-3 .box-3 {
+            width: 100%;
+            height: 255.7px;
+            padding: 20px;
+        }
+
+        .box-3 h1 {
+            font-size: 3vh;
+        }
+
+        .box-3 p {
+            font-size: 12px;
+        }
+    }
     
     </style>
 </head>
@@ -152,18 +365,15 @@
             <img src="../static/rpic1.avif" alt="">
             <div class="text-1">
                 <h1>Unlock Competitive Insights with PricePrive's Data Analysis Services</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus quae iste<br> 
-                    dolorum minima nostrum nam unde rerum quis quod dolores, adipisci autem hic tempore commodi<br>
-                     saepe voluptatem aliquid vitae?</p>
+                <p>At PricePrive, we empower businesses by scraping and analyzing competitor data.<br>
+                    Our comprehensive reports cover key metrics like stock levels, pricing strategies,<br> and inventory management, helping you make informed decisions to stay ahead in <br>the market. Discover the power of data-driven insights with our expert services.</p>
             </div>
         </div>
         <div class="box-1">
             <img src="../static/rpic2.avif" alt="">
             <div class="text-1">
                 <h1>Unlock Competitive Insights with PricePrive's Data Analysis Services</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus quae iste<br> 
-                    dolorum minima nostrum nam unde rerum quis quod dolores, adipisci autem hic tempore commodi<br>
-                     saepe voluptatem aliquid vitae?</p>
+                <p>At PricePrive, we empower businesses by providing comprehensive competitor<br> insights. Our data scraping and analysis services deliver detailed reports on stock,<br> pricing, and inventory metrics, helping you make informed decisions and stay ahead<br> in the competitive landscape. Discover the power of data-driven strategies with us.</p>
             </div>
         </div>
     </section>
@@ -171,8 +381,7 @@
         <div class="box-2">
             <div class="text-2">
                 <h1>Competitive Insights</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus quae iste<br> 
-                    dolorum </p>
+                <p>We provide detailed reports on competitors' stock, pricing, and inventory.</p>
             </div>
         </div>
         <div class="box2-2">
@@ -180,14 +389,14 @@
                 <img src="../static/rpic2.avif" alt="">
                 <div class="textbox-2">
                     <h1>Data Analysis</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam temporibus eum incidunt!</p>
+                    <p>Our analysis helps businesses understand market trends and competitor strategies effectively.</p>
                 </div>
             </div>
             <div class="img-box-2">
                 <img src="../static/rpic4.avif" alt="">
                 <div class="textbox-2">
                     <h1>Market Reports</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eligendi sed debitis!</p>
+                    <p>We deliver comprehensive market reports that guide strategic decision-making for businesses.</p>
                 </div>
             </div>
         </div>
@@ -196,8 +405,14 @@
         <!-- <div class="sec-div-3"> -->
             <img src="../static/spic4.jpeg" alt="">
             <div class="box-3">
-                <h1>******</h1>
-                <p>Price prive Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Assumenda voluptatem veritatis<br> aut unde iure, nisi exercitationem praesentium in mollitia dolore rem, commodi tempore? Numquam,<br> optio ea! Aspernatur nemo eligendi quibusdam.</p>
+                <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star checked "></span>
+                </p>
+                <p>Priceprive provided me valuable insights into my competitors' stock and pricing strategies. Highly recommend their analysis!</p>
                 <div class="logo-3">
                     <!-- <img src="" alt=""> -->
                     <p>Emily R</p>
