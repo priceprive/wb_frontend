@@ -31,7 +31,7 @@
         }
 
         header nav a {
-            font-size: 3.5vh;
+            font-size: 3vh;
             color: black;
             text-decoration: none;
         }
@@ -154,7 +154,7 @@
             top: -30px;
             gap: 70px;
             padding: 100px;
-            margin: 0;
+            margin: 25px;
         }
 
         .images3 .img3 {
@@ -175,6 +175,7 @@
             display: flex;
             flex-direction: row;
             border-radius: 10px;
+            margin-left: 20px;
         }
 
         .img3-sub img {
@@ -182,17 +183,51 @@
             object-fit: cover;
         }
 
+        .img3 .text h1,
+        p {
+            text-align: center;
+        }
 
-        /* .images{
-            display:flex;
+        #sec-6 {
+            margin-top: 100px;
+            background-color: #482c24;
+            display: flex;
             flex-direction: row;
-            justify-content: space-between;
-        } */
+            gap: 150px;
+            height: 300px;
+        }
+
+        #services {
+            margin-left: 40px;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+        #contact img {
+            margin-top: 30px;
+            margin-left: 10px;
+            width: 120px;
+            height: 120px;
+        }
+
+        #contact .footer-text h1 {
+            /* margin-top: -10px; */
+            font-size: 6vh;
+        }
+
+        #contact .footer-text p {
+            margin-top: -20px;
+            font-size: 3.5vh;
+        }
 
 
         /* Responsive Styles (Add this at the end of your <style> block) */
         @media (max-width: 1200px) {
-            #sec-1{
+            #sec-1 {
                 height: 1000px;
             }
 
@@ -257,9 +292,10 @@
                 font-size: 2.5vh;
             }
 
-            #sec-1{
+            #sec-1 {
                 height: 1400px;
             }
+
             .content-1 h1 {
                 font-size: 6vh;
             }
@@ -321,6 +357,50 @@
             .images3 {
                 padding: 20px;
             }
+
+
+        }
+
+
+        /* MACBOOK */
+
+        @media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 784px) and (max-height: 784px) {
+            .images3 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                /* gap: 10px; */
+                justify-content: center;
+                width: 80%;
+                position: relative;
+                top: -30px;
+                gap: 60px;
+                padding: 100px;
+                margin: 0;
+                margin-left: 50px;
+            }
+
+            .images3 .img3 {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img3-sub {
+                width: 460px;
+                height: 240px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: row;
+                border-radius: 10px;
+                align-items: center;
+                margin-left: 40px;
+            }
+
+            .img3 .text h1,
+            p {
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -348,21 +428,24 @@
                 <img src="../static/contact.jpg" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
                 <div class="text-1">
                     <h2>Data Scraping Services</h2>
-                    <p>Our data scraping services deliver comprehensive reports on stock, pricing, and inventory metrics for insights.</p>
+                    <p>Our data scraping services deliver comprehensive reports on stock, pricing, and inventory metrics
+                        for insights.</p>
                 </div>
             </div>
             <div class="img1">
                 <img src="../static/pic1.jpeg" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
                 <div class="text-1">
                     <h2>Analytical Reporting Services</h2>
-                    <p>We generate in-depth analytical reports that help you understand market trends and competitor performance effectively.</p>
+                    <p>We generate in-depth analytical reports that help you understand market trends and competitor
+                        performance effectively.</p>
                 </div>
             </div>
             <div class="img1">
                 <img src="../static/spic5.jpeg" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
                 <div class="text-1">
                     <h2>Market Trend Analysis</h2>
-                    <p>Our services empower businesses with the insights needed to stay ahead in dynamic market conditions.</p>
+                    <p>Our services empower businesses with the insights needed to stay ahead in dynamic market
+                        conditions.</p>
                 </div>
             </div>
         </div>
@@ -431,8 +514,32 @@
             </div>
         </div>
     </section>
-    <section class="sec-4">
-
+    <section class="sec-6" id="sec-6">
+        <div class="col" id="services">
+            <h3>Services</h3>
+            <p>Competitor Insights</p>
+            <p>Competitor Insights Analysis</p>
+        </div>
+        <div class="col" id="resources">
+            <h3>Resources</h3>
+            <p>Data Analysis</p>
+            <p>Market Research</p>
+            <p>Performance Metrics</p>
+            <p>Inventory Insights</p>
+        </div>
+        <div class="col" id="pricing">
+            <h3>Pricing</h3>
+            <p>Basic Plan</p>
+            <p>Advanced Plan</p>
+            <p>Custom Plan</p>
+        </div>
+        <div class="col" id="contact">
+            <img src="../static/unnamed_Logo.jpeg" alt="">
+            <div class="footer-text">
+                <h1>Price Prive</h1>
+                <p>support@priceprive.com</p>
+            </div>
+        </div>
     </section>
 </body>
 

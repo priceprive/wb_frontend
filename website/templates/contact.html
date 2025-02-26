@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,30 +12,32 @@
             overflow-x: hidden;
         }
 
+
         header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 15px 30px;
-      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-    }
-    
-    header img {
-      height: 40px;
-    }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        }
 
-    header nav {
-      display: flex;
-      gap: 50px;
-    }
+        header img {
+            height: 40px;
+        }
 
-    header nav a{
-        font-size: 3.5vh;
-        color: black;
-        text-decoration: none;
-    }
+        header nav {
+            display: flex;
+            gap: 50px;
+        }
 
-        #sec-1{
+        header nav a {
+            font-size: 3vh;
+
+            color: black;
+            text-decoration: none;
+        }
+
+        #sec-1 {
             display: flex;
             flex-direction: row;
             /* margin-top:70px; */
@@ -42,65 +45,111 @@
             /* align-items: center; */
         }
 
-        .content-1{
+        .content-1 {
             display: flex;
             flex-direction: column;
-            
+
         }
-        .content-1  h2{
-            font-size: 10vh;
+
+        .content-1 h2 {
+            font-size: 8vh;
             margin-left: 100px;
             /* text-align: center;
             align-items: center; */
         }
 
-        .content-1 p{
+        .content-1 p {
             margin-top: -20px;
             font-size: 3vh;
             margin-left: 100px;
         }
-        .image-section img{
+
+        .image-section img {
             margin-left: 100px;
-            margin-top: 90px;
+            margin-top: 70px;
             width: 160vh;
-            height: 400px;
+            height: 300px;
         }
-        .form-container{
+
+        .form-container {
             position: absolute;
-  right: 8%;
-  top: 50%;
-  transform: translateY(-40%);
-  /* transform: translateX(-40%); */
-  background-color: white;
-  padding: 30px;
-  width: 30%;
-  height: 56%;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            right: 8%;
+            top: 50%;
+            transform: translateY(-40%);
+            /* transform: translateX(-40%); */
+            background-color: white;
+            padding: 30px;
+            width: 30%;
+            height: 62%;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         input {
+            padding: 10px;
+            margin-top: 10px;
             width: 350px;
-            height: 45px;
+            height: 25px;
             border: 0.4px solid rgb(117, 117, 117);
             border-radius: 20px;
         }
-        textarea{
+
+        textarea {
+            padding: 15px;
+            margin-top: 10px;
             width: 350px;
-            height: 95px;
+            height: 70px;
             border: 0.4px solid rgb(117, 117, 117);
             border-radius: 20px;
         }
-        .form-container button{
+
+        .form-container button {
             background-color: black;
             color: white;
             width: 170px;
             height: 40px;
             border-radius: 20px;
         }
+
+        #sec-6 {
+            margin-top: 100px;
+            background-color: #482c24;
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            height: 300px;
+        }
+
+        #services {
+            margin-left: 40px;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+        #contact img {
+            margin-top: 30px;
+            margin-left: 10px;
+            width: 120px;
+            height: 120px;
+        }
+
+        #contact .footer-text h1 {
+            /* margin-top: -10px; */
+            font-size: 6vh;
+        }
+
+        #contact .footer-text p {
+            margin-top: -20px;
+            font-size: 3.5vh;
+        }
     </style>
 </head>
-<body> 
+
+<body>
     <header>
         <!-- <h1>Logo</h1> -->
         <img src="../static/Logo.jpeg" alt="" style="width: 80px; height: 80px; padding: 0; margin: 0;">
@@ -125,18 +174,45 @@
             <form action="#" method="post">
                 <label for="name">Enter your first name</label><br>
                 <input type="text" id="name" name="name" placeholder="Your first name here" required><br><br>
-        
+
                 <label for="email">Enter your email address*</label><br>
                 <input type="email" id="email" name="email" placeholder="Your email address here" required><br><br>
-        
+
                 <label for="message">Enter your message*</label><br>
-                <textarea id="message" name="message" placeholder="Your message here" rows="4" required></textarea><br><br>
-        
+                <textarea id="message" name="message" placeholder="Your message here" rows="4"
+                    required></textarea><br><br>
+
                 <button type="submit">Submit your request now</button>
-              </form>
+            </form>
         </div>
     </section>
-    <section class="sec-2" id="sec-2"></section>
-    <section class="sec-3" id="sec-3"></section>
+    <section class="sec-6" id="sec-6">
+        <div class="col" id="services">
+            <h3>Services</h3>
+            <p>Competitor Insights</p>
+            <p>Competitor Insights Analysis</p>
+        </div>
+        <div class="col" id="resources">
+            <h3>Resources</h3>
+            <p>Data Analysis</p>
+            <p>Market Research</p>
+            <p>Performance Metrics</p>
+            <p>Inventory Insights</p>
+        </div>
+        <div class="col" id="pricing">
+            <h3>Pricing</h3>
+            <p>Basic Plan</p>
+            <p>Advanced Plan</p>
+            <p>Custom Plan</p>
+        </div>
+        <div class="col" id="contact">
+            <img src="../static/unnamed_Logo.jpeg" alt="">
+            <div class="footer-text">
+                <h1>Price Prive</h1>
+                <p>support@priceprive.com</p>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
