@@ -5,121 +5,257 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color: white;
+        body {
+            margin: 0;
+            padding: 0;
         }
-    header {
+
+        header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 15px 30px;
       /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     }
+    
     header img {
       height: 40px;
     }
+
     header nav {
       display: flex;
-      gap: 20px;
+      gap: 50px;
     }
-    header a {
-      text-decoration: none;
-      color: #333;
-      font-size: 16px;
-      font-weight: 500;
+
+    header nav a{
+        font-size: 3.5vh;
+        color: black;
+        text-decoration: none;
     }
-    header nav .button {
-    background-color: #ff7f50;
-    padding: 8px 12px;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: bold;
+     
+    .Price-Content{
+        text-align: center;
+        /* margin-left: 40px */
+    }
+
+    .Price-Content h1{
+        font-size: 7.5vh;
+    }
+
+    .Price-Content p{
+        font-size: 3.5vh;
+        margin-top: -20px;
+    }
+
+
+
+    .Price-cards{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        gap: 30px;
+    }
+
+    .card{
+        background-color: #f5e3f7;
+        border: 1px solid blueviolet;
+        width: 260px;
+        height: 460px;
+        border-radius: 10px;
+        box-shadow: 8px 10px 7px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover{
+        transform: scale(1.1);
+        z-index:2
+    }
+
+    #card-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card-1 .head{
+        /* justify-content: center;
+        align-items: center; */
+        text-align: center;
+        width: 22vh;
+        height: 7vh;
+        background-color: #4a375a;
+        border-radius: 10px;
+    }
+
+    #card-1 .head h2{
+        margin-top: 10px;
+        color: white;
+    }
+
+    #card-1 p{
+        margin-top: 10px;
+        color: black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+
+    .pricing {
+    font-family: Arial, sans-serif;
+    color: #2E2545; /* Dark purple similar to the image */
+    padding: 10px;
+    margin-left: px;
+    width: max-content;
+    border-radius: 5px;
 }
 
-    .price-box{
-        /* background-color: #e88383; */
+.price {
+    font-weight: bold;
+    font-size: 20px; /* Adjust as needed */
+}
+
+.colored-bullets{
+    margin-left: -12px;
+}
+.colored-bullets  li {
+    font-size: 17px; /* Normal text size */
+    line-height: 1.9;
+    position: relative;
+}
+
+.colored-bullets li::before {
+    content: "•"; /* Unicode for a filled bullet */
+    color: #2E2545; /* Change bullet color */
+    font-size: 30px; /* Make bullet much bigger */
+    position: absolute;
+    left: -17px; /* Adjust bullet position */
+    top: -11px; /* Fine-tune alignment */
+}
+#card-2 .head{
+        /* justify-content: center;
+        align-items: center; */
+        text-align: center;
+        width: 22vh;
+        height: 6vh;
+        background-color: #4a375a;
+        border-radius: 10px;
+        margin-left: 25%;
+    }
+    #card-2 .head h2{
+        font-size: 5vh;
+        color: white;
+    }
+
+    #card-3 .head{
+        /* justify-content: center;
+        align-items: center; */
+        text-align: center;
+        width: 30vh;
+        height: 6vh;
+        background-color: #4a375a;
+        border-radius: 10px;
+        margin-left: 17%;
+    }
+    #card-3 .head h2{
+        font-size: 5vh;
+        color: white;
+    }
+
+    #card-4{
         display: flex;
-        justify-content: space-around;
-        height: 400px;
-        width:auto;
-        padding: 0;
-        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-   
-    .content1 {
-        margin-top: 0px;
-        height: 300px;
-        width: 270px;
+    #card-4 .head{
+        /* justify-content: center;
+        align-items: center; */
+        text-align: center;
+        width: 27vh;
+        height: 7vh;
+        background-color: #4a375a;
+        border-radius: 10px;
     }
-    .content1 img{
-      width: 500px;
-    }
-   
 
+    #card-4 .head h2{
+        margin-top: 10px;
+        color: white;
+    }
 
-    form {
-      max-width: 500px;
-      height: 150px;
-      margin: 0 auto;
-      background: #f9f9b7;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    form input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0px;
-      border: 1px solid #f79191;
-      border-radius: 5px;
-      font-size: 14px;
-    }
-    form button {
-      width: 100%;
-      padding: 10px;
-      background-color: #f7b860;
-      /* color: white; */
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    form button:hover {
-      background-color: #d39a3f;
+    #card-4  p{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 10px;
+        color: black;
     }
     </style>
 </head>
 <body>
     <header>
-        <h1>Logo</h1>
-        <nav>
-          <a href="{{ url_for('auth.product') }}">Products</a>
-          <a href="#">Solutions</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="{{ url_for('auth.company') }}">Company</a>
-          <a href="#" class="button">Try For Free</a>
-        </nav>
-      </header>
-    <main>
-        <section>
-            <div class="price-box">
-            <div class="content1">
-              <img src="static/price.jpg" alt="">
-                <!-- <h1>Unlock Your Perfect Prices by Simply Entering the Number of SKUs You Need!</h1> -->
-            </div>
-            <div class="price-calculator">
-                <h2>Price Calculator</h2>
-                <div class="calculator">
-                    <form id="sku-price-calculator">
-                        <input type="number" id="number" name="number" placeholder="Enter the No. of SKUs" required>
-                        <button type="submit">Get the Price</button>
-                      </form>
-                </div>
-            </div>
-            </div>
-        </section>
-    </main>
+        <img src="../static/Logo.jpeg" alt="" style="width: 80px; height: 80px; padding: 0; margin: 0;">
 
+        <nav>
+            <a href="{{ url_for('auth.competitor') }}">Home</a>
+            <a href="{{ url_for('auth.services') }}">Services</a>
+            <a href="{{ url_for('auth.report') }}">Reports</a>
+            <a href="{{ url_for('auth.contact') }}">Contacts</a>
+            <a href="{{ url_for('auth.pricing') }}">Pricing</a>
+        </nav>
+    </header>
+    <section class="Price-Content">
+        <h1>Pricing</h1>
+        <p>Build on index for free with your company.<br>Upgrade for unlimited dashboards,editors,connections <br>and dedicated exterprise features.</p>
+    </section>
+    <section class="Price-cards">
+        <div class="card" id="card-1">
+            <div class="head">
+                <h2>FREE</h2>
+            </div>
+            <P>"It's on us until we earn your trust."</P>
+        </div>
+        <div class="card" id="card-2">
+            <div class="head">
+                <h2>BASIC</h2>
+            </div>
+            <div class="pricing">
+                <p><span class="price">$173/</span> <span class="desc">2K Urls</span></p>
+                <p><span class="price">$390/</span> <span class="desc">10K Urls</span></p>
+                <p><span class="price">$803/</span> <span class="desc">50K Urls</span></p>   
+            </div>
+            <div class="details">
+                <ul class="colored-bullets">
+                    <li>Dynamic Value Insights</li>
+                    <li>Competitive Market Pulse</li>
+                    <li>Customer Cost Compass</li>
+                    <li>Actionable Pricing Metrics</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card" id="card-3"><div class="head">
+            <h2>ADVANCED</h2>
+        </div>
+        <div class="pricing">
+            <p><span class="price">$309/</span> <span class="desc">2K Urls</span></p>
+            <p><span class="price">$883/</span> <span class="desc">10K Urls</span></p>
+            <p><span class="price">$1549/</span> <span class="desc">50K Urls</span></p>   
+        </div>
+        <div class="details">
+            <ul class="colored-bullets">
+                <li>Price History Hub</li>
+                <li>Integrated Analytical Engine</li>
+                <li>Web Intelligence Extractor</li>
+                <li>Visual Data Mapper</li>
+                <li>Custom Data Grabber</li>
+                <li>Product Evolution Tracker</li>
+                <li>Smart Store Watch</li>
+            </ul>
+        </div></div>
+        <div class="card" id="card-4">
+            <div class="head">
+                <h2>CUSTOMISED</h2>
+            </div>
+            <P>"50K+ URLs?<br>Let's tailor a plan for you."</P>
+        </div>
+    </section>
 </body>
 </html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    }
+    
+    header img {
+      height: 40px;
+    }
+
+    header nav {
+      display: flex;
+      gap: 50px;
+    }
+
+    header nav a{
+        font-size: 3.5vh;
+        color: black;
+        text-decoration: none;
+    }
+
+        #sec-1{
+            display: flex;
+            flex-direction: row;
+            /* margin-top:70px; */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        .content-1{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .content-1  h2{
+            font-size: 10vh;
+            margin-left: 100px;
+            /* text-align: center;
+            align-items: center; */
+        }
+
+        .content-1 p{
+            margin-top: -20px;
+            font-size: 3vh;
+            margin-left: 100px;
+        }
+        .image-section img{
+            margin-left: 100px;
+            margin-top: 90px;
+            width: 160vh;
+            height: 400px;
+        }
+        .form-container{
+            position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-40%);
+  /* transform: translateX(-40%); */
+  background-color: white;
+  padding: 30px;
+  width: 30%;
+  height: 56%;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        input {
+            width: 350px;
+            height: 45px;
+            border: 0.4px solid rgb(117, 117, 117);
+            border-radius: 20px;
+        }
+        textarea{
+            width: 350px;
+            height: 95px;
+            border: 0.4px solid rgb(117, 117, 117);
+            border-radius: 20px;
+        }
+        .form-container button{
+            background-color: black;
+            color: white;
+            width: 170px;
+            height: 40px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body> 
+    <header>
+        <!-- <h1>Logo</h1> -->
+        <img src="../static/Logo.jpeg" alt="" style="width: 80px; height: 80px; padding: 0; margin: 0;">
+
+        <nav>
+            <a href="{{ url_for('auth.competitor') }}">Home</a>
+            <a href="{{ url_for('auth.services') }}">Services</a>
+            <a href="{{ url_for('auth.report') }}">Reports</a>
+            <a href="{{ url_for('auth.contact') }}">Contacts</a>
+            <a href="{{ url_for('auth.pricing') }}">Pricing</a>
+        </nav>
+    </header>
+    <section class="sec-1" id="sec-1">
+        <div class="content-1">
+            <h2>Contact Us</h2>
+            <p>Reach out to us for insights on competitor analysis, stock, pricing,<br> and inventory data.</p>
+            <div class="image-section">
+                <img src="../static/contact.jpg" alt="Contact Us Image">
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="#" method="post">
+                <label for="name">Enter your first name</label><br>
+                <input type="text" id="name" name="name" placeholder="Your first name here" required><br><br>
+        
+                <label for="email">Enter your email address*</label><br>
+                <input type="email" id="email" name="email" placeholder="Your email address here" required><br><br>
+        
+                <label for="message">Enter your message*</label><br>
+                <textarea id="message" name="message" placeholder="Your message here" rows="4" required></textarea><br><br>
+        
+                <button type="submit">Submit your request now</button>
+              </form>
+        </div>
+    </section>
+    <section class="sec-2" id="sec-2"></section>
+    <section class="sec-3" id="sec-3"></section>
+</body>
+</html>

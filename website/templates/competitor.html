@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-image: url("");
+            
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        header nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        header nav a {
+            font-size: 3.5vh;
+            color: black;
+            text-decoration: none;
+        }
+
+        section {
+            margin: 0;
+            padding: 0;
+        }
+
+        #sec-1 {
+            background-color: #44362d;
+            /* background-color: #f5bd6e; */
+            width: 96%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #sec-1 .content-1 {
+            color: white;
+            /* font-size: 9vh; */
+            /* display: flex; */
+            /* flex-direction: column; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            line-height: 1;
+        }
+
+        .button-1 {
+            margin-top: 40px;
+            width: 100px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid white;
+            background-color: #44362d;
+        }
+
+        .button-1 .button {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content-1 h1 {
+            font-size: 10vh;
+        }
+
+
+
+        .container {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 16px;
+
+        }
+
+        .container .box {
+            background-color: #716157;
+            width: 64vh;
+            height: 27vh;
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+        .container .box p {
+            margin: 0;
+            /* Remove extra margin on text elements */
+            padding: 0;
+            /* Remove default padding */
+            color: white;
+            font-size: 3vh !important;
+        }
+
+        .container .box h1 {
+            font-size: 5vh !important;
+            color: white !important;
+        }
+
+
+        #sec-2 {
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* justify-content: center;
+        align-items: center;
+        text-align: center; */
+            padding: 20px;
+            margin: 0;
+            margin-top: 50px;
+        }
+
+        .content-2 {
+            margin-top: 70px;
+        }
+
+        .content-2 h1 {
+            font-size: 10vh;
+        }
+
+
+        .content-2 .explore-btn {
+            border: 1px solid black;
+            width: 100px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: -50px;
+            gap: 5vh;
+            position: relative;
+            top: 3vh;
+
+        }
+
+        .image3-1 {
+            background-color: #7ae77a;
+            position: relative;
+            width: 96vh;
+            height: 50vh;
+            /* margin: auto; */
+            border-radius: 15px;
+            overflow: visible;
+        }
+
+        .image3-1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-image1 {
+            object-fit: cover;
+            /* display: block;
+  border-radius: 15px; */
+        }
+
+
+        .text-box-1 {
+            position: absolute;
+            bottom: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            padding: 20px;
+            width: 50vh;
+
+            height: 20vh;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .image3-2 {
+            background-color: #6e3a3a;
+            position: relative;
+            width: 70vh;
+            height: 50vh;
+            /* margin: auto; */
+            border-radius: 15px;
+            overflow: visible;
+        }
+
+        .card-image2 {
+            display: block;
+            /* border-radius: 15px; */
+        }
+
+
+        .text-box-2 {
+            position: absolute;
+            bottom: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            padding: 20px;
+            width: 50vh;
+            height: 20vh;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #sec-3 {
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            background-size: cover;
+            background-color: #f5e1e1;
+            /* min-height: 100vh; */
+
+
+        }
+
+        .content-3 {
+            position: relative;
+            top: -120px;
+            /* line-height: 1; */
+        }
+
+        .content-3 h1 {
+            text-align: center;
+            font-size: 10vh;
+        }
+
+        .content-3 p {
+            margin-top: -20px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #sec-4 {
+            position: relative;
+            top: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+            height: 600px;
+        }
+
+        .rating {
+            /* background-color: #ae7979; */
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .rating .star p {
+            color: black;
+            position: relative;
+            top: 60px;
+            font-size: 6vh;
+        }
+
+        .rating .comment p {
+            text-align: center;
+            position: relative;
+            top: 10vh;
+            left: 10px;
+            color: black;
+            font-size: 4vh;
+        }
+
+        .rating .profile {
+            position: relative;
+            top: 18vh;
+        }
+
+        #sec-5 {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            height: 900px;
+            margin-left: 30px;
+        }
+
+        #sec-5 .content2-5 {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            /* margin-left: 40px; */
+        }
+
+        .image-5 {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top: 40px;
+            gap: 20vh;
+
+        }
+
+        .image-5 .img-5 img {
+            width: 450px;
+            height: 295px;
+        }
+
+        .image-5 .text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-5 .text h1 {
+            font-size: 5vh;
+        }
+
+        #sec-6 {
+            margin: 0;
+            padding: 0;
+            background-color: #876e6e;
+            height: 30vh;
+
+        }
+
+        .content-5 h1 {
+            font-size: 8vh;
+        }
+
+        .content-5 p {
+
+            font-size: 3vh;
+        }
+
+        .rating .profile img {
+            width: 400px;
+            height: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- <h1>Logo</h1> -->
+        <img src="../static/Logo.jpeg" alt="" style="width: 80px; height: 80px; padding: 0; margin: 0;">
+        <nav>
+            <a href="{{ url_for('auth.competitor') }}">Home</a>
+            <a href="{{ url_for('auth.services') }}">Services</a>
+            <a href="{{ url_for('auth.report') }}">Reports</a>
+            <a href="{{ url_for('auth.contact') }}">Contacts</a>
+            <a href="{{ url_for('auth.pricing') }}">Pricing</a>
+        </nav>
+    </header>
+    <section class="section" id="sec-1">
+        <div class="content-1" id="contents-1">
+            <h1>Unlock Insights from <br> Data with PricePrive</h1>
+            <p>"Turning Competitor Data into Your Competitive Edge."</p>
+
+        </div>
+        <div class="button-1">
+            <a href="/contact" class="button">Get Started</a>
+        </div>
+
+        <div class="container">
+            <div class="box" id="box-1">
+                <h1>Data Analysis Tools</h1>
+                <p>Comprehensive insights on stock,price and inventory.</p>
+            </div>
+            <div class="box" id="box-2">
+                <h1>Insight Reports</h1>
+                <p>Tailored reports for informed decision-making.</p>
+            </div>
+            <div class="box" id="box-3">
+                <h1>Market Analysis</h1>
+                <p>Monitor market trends and stay competitive.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="sec-2">
+        <div class="content-2" id="contents-2">
+            <h1>Unlock Competitor Insights with<br> Priceprive</h1>
+            <p>At Priceprive, we empower businesses by providing comprehensive competitor insights through data scraping
+                and analysis, delivering valuable reports on stock, pricing, and inventory metrics.</p>
+            <div class="explore-btn">
+                <a href="" class="button"> Explore</a>
+            </div>
+        </div>
+        <div class="image-2">
+            <img src="../static/contact.jpg" alt="">
+        </div>
+    </section>
+    <section class="section" id="sec-3">
+        <div class="content-3" id="contents-3">
+            <h1>Competitor Insights Analysis</h1>
+            <p>We provide comprehensive reports on competitor metrics including stock levels, pricing, and inventory
+                analysis.</p>
+        </div>
+        <div class="image-3">
+            <div class="image3-1">
+                <img src="../static/rpic2.avif" alt="" class="card-image1">
+                <div class="text-box-1">
+                    <h2>Custom Reports Delivered</h2>
+                    <p>Receive tailored reports that highlight key metrics and trends to help you stay ahead of
+                        competitors.</p>
+                </div>
+            </div>
+            <div class="image3-1">
+                <img src="../static/rpic1.avif" alt="" class="card-image2">
+                <div class="text-box-1">
+                    <h2>Custom Reports Delivered</h2>
+                    <p>Receive tailored reports that highlight key metrics and trends to help you stay ahead of
+                        competitors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="sec-4">
+        <div class="rating">
+            <div class="star">
+                <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star checked "></span>
+                </p>
+
+            </div>
+            <div class="comment">
+                <p>PricePrive's insights helped us understand our competitors<br>better and improve our pricing strategy
+                    significantly.</p>
+            </div>
+            <div class="profile">
+                <img src="../static/spic3.jpeg" alt="">
+            </div>
+        </div>
+        <div class="rating">
+            <div class="star">
+                <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star checked "></span>
+                </p>
+            </div>
+            <div class="comment">
+                <p>The detailed reports provided by PricePrive have been <br>invaluable for our inventory manageent and
+                    forecasting.</p>
+            </div>
+            <div class="profile">
+                <img src="../static/spic5.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="section" id="sec-5">
+        <div class="content-5">
+            <h1>Competitor Insights</h1>
+            <p>We provide comprehensive analysis of competitors' stock,pricing, and inventory.</p>
+        </div>
+        <div class="content2-5">
+            <div class="image-5">
+                <div class="img-5">
+                    <img src="../static/pic1.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h1>Data Analysis</h1>
+                    <p>Our detailed reports help businesses make informed decisions based<br> on competitor data.</p>
+                </div>
+            </div>
+            <div class="image-5">
+                <div class="img-5">
+                    <img src="../static/rpic3.avif" alt="">
+                </div>
+                <div class="text">
+                    <h1>Market Trends</h1>
+                    <p>Stay ahead of the competition with our insightful market trend analysis.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section" id="sec-6">
+        <div class="insights">
+            <h2>Insights</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat labore illum esse?</p>
+        </div>
+    </section>
+</body>
+
+</html>

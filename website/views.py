@@ -1,12 +1,12 @@
-from flask import Blueprint 
+from flask import Blueprint,render_template
 from . import db
 from sqlalchemy import text 
 
 views = Blueprint('views',__name__)
 
-# @views.route('/')
-# def home():
-#     return "<h1>Test</h1>"
+@views.route('/')
+def home():
+    return render_template("competitor.html")
 
 @views.route('/test-db')
 def test_db():
