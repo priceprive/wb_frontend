@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         /* Custom styles that Bootstrap doesn't cover */
+        body {
+            overflow-x: hidden;
+        }
+
         #sec-1 {
             background-color: #44362d;
             height: 100vh;
@@ -21,6 +25,16 @@
             text-align: center;
             padding: 20px;
             color: white;
+        }
+
+        #sec-1 .content-1 h1 {
+            font-size: 5vh;
+            line-height: 1.3;
+        }
+
+        #sec-1 .content-1 p {
+            font-size: 3vh;
+            word-spacing: 4px;
         }
 
         .button-1 {
@@ -47,6 +61,15 @@
             color: white;
         }
 
+        #sec-2 {
+            background-color: white;
+            padding: 50px 0;
+        }
+
+        #sec-2 .content-2 h1 {
+            font-size: 6.4vh;
+        }
+
         #sec-3 {
             background-color: #f5e1e1;
             padding: 50px 0;
@@ -71,6 +94,27 @@
             text-align: center;
         }
 
+        #sec-4 {
+            padding: 50px 0;
+        }
+
+        .rating {
+            text-align: center;
+        }
+
+        .rating .profile img {
+            width: 100%;
+            height: auto;
+        }
+
+        #sec-5 {
+            padding: 50px 0;
+        }
+
+        #sec-5 .image-5 img {
+            border-radius: 30px;
+        }
+
         #sec-6 {
             background-color: #f4d6d6;
             padding: 50px 0;
@@ -91,43 +135,21 @@
 </head>
 
 <body>
-    <!-- Header with Bootstrap Navbar -->
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../static/Logo.jpeg" alt="Logo" style="width: 80px; height: 80px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('auth.competitor') }}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('auth.services') }}">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('auth.report') }}">Reports</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('auth.contact') }}">Contacts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('auth.pricing') }}">Pricing</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <header class="d-flex justify-content-between align-items-center p-3">
+        <img src="../static/Logo.jpeg" alt="Logo" style="width: 80px; height: 80px;">
+        <nav class="d-flex gap-4">
+            <a href="{{ url_for('auth.competitor') }}" class="text-dark text-decoration-none">Home</a>
+            <a href="{{ url_for('auth.services') }}" class="text-dark text-decoration-none">Services</a>
+            <a href="{{ url_for('auth.report') }}" class="text-dark text-decoration-none">Reports</a>
+            <a href="{{ url_for('auth.contact') }}" class="text-dark text-decoration-none">Contacts</a>
+            <a href="{{ url_for('auth.pricing') }}" class="text-dark text-decoration-none">Pricing</a>
+        </nav>
     </header>
 
-    <!-- Section 1 -->
     <section id="sec-1" class="text-center">
         <div class="content-1">
-            <h1 class="display-4">Unlock Insights from <br> Data with PricePrive</h1>
-            <p class="lead">"Turning Competitor Data into Your Competitive Edge."</p>
+            <h1>Unlock Insights from <br> Data with PricePrive</h1>
+            <p>"Turning Competitor Data into Your Competitive Edge."</p>
         </div>
         <div class="button-1">
             <a href="/contact" class="button">Get Started</a>
@@ -150,25 +172,23 @@
         </div>
     </section>
 
-    <!-- Section 2 -->
-    <section id="sec-2" class="container-fluid py-5">
+    <section id="sec-2" class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-md-6 content-2 text-center text-md-start">
-                <h1 class="display-4">Unlock Competitor <br>Insights with<br> Priceprive</h1>
-                <p class="lead">At Priceprive, we empower businesses by providing comprehensive competitor insights through data scraping
+            <div class="col-md-6 content-2">
+                <h1>Unlock Competitor <br>Insights with<br> Priceprive</h1>
+                <p>At Priceprive, we empower businesses by providing comprehensive competitor insights through data scraping
                     and analysis, delivering valuable reports on stock, pricing, and inventory metrics.</p>
             </div>
-            <div class="col-md-6 image-2 text-center">
+            <div class="col-md-6 image-2">
                 <img src="../static/contact.jpg" alt="Contact" class="img-fluid">
             </div>
         </div>
     </section>
 
-    <!-- Section 3 -->
-    <section id="sec-3" class="text-center py-5">
+    <section id="sec-3" class="text-center">
         <div class="content-3">
-            <h1 class="display-4">Competitor Insights Analysis</h1>
-            <p class="lead">We provide comprehensive reports on competitor metrics including stock levels, pricing, and inventory
+            <h1>Competitor Insights Analysis</h1>
+            <p>We provide comprehensive reports on competitor metrics including stock levels, pricing, and inventory
                 analysis.</p>
         </div>
         <div class="container mt-5">
@@ -193,10 +213,9 @@
         </div>
     </section>
 
-    <!-- Section 4 -->
-    <section id="sec-4" class="container py-5">
+    <section id="sec-4" class="container">
         <div class="row gap-4 justify-content-center">
-            <div class="col-md-5 rating text-center">
+            <div class="col-md-5 rating">
                 <div class="star">
                     <p>
                         <span class="fa fa-star checked"></span>
@@ -214,7 +233,7 @@
                     <img src="../static/spic3.jpeg" alt="Profile 1" class="img-fluid">
                 </div>
             </div>
-            <div class="col-md-5 rating text-center">
+            <div class="col-md-5 rating">
                 <div class="star">
                     <p>
                         <span class="fa fa-star checked"></span>
@@ -235,22 +254,21 @@
         </div>
     </section>
 
-    <!-- Section 5 -->
-    <section id="sec-5" class="container py-5">
+    <section id="sec-5" class="container">
         <div class="content-5 text-center">
-            <h1 class="display-4">Competitor Insights</h1>
-            <p class="lead">We provide comprehensive analysis of competitors' stock, pricing, and inventory.</p>
+            <h1>Competitor Insights</h1>
+            <p>We provide comprehensive analysis of competitors' stock, pricing, and inventory.</p>
         </div>
         <div class="content2-5 mt-5">
             <div class="row gap-4 justify-content-center">
-                <div class="col-md-5 image-5 text-center">
+                <div class="col-md-5 image-5">
                     <img src="../static/pic1.jpeg" alt="Data Analysis" class="img-fluid">
                     <div class="text">
                         <h1>Data Analysis</h1>
                         <p>Our detailed reports help businesses make informed decisions based<br> on competitor data.</p>
                     </div>
                 </div>
-                <div class="col-md-5 image-5 text-center">
+                <div class="col-md-5 image-5">
                     <img src="../static/rpic3.avif" alt="Market Trends" class="img-fluid">
                     <div class="text">
                         <h1>Market Trends</h1>
@@ -261,28 +279,27 @@
         </div>
     </section>
 
-    <!-- Section 6 -->
-    <section id="sec-6" class="container-fluid py-5">
+    <section id="sec-6" class="container-fluid">
         <div class="row gap-4 justify-content-center p-5">
-            <div class="col-md-2 col text-center">
+            <div class="col-md-2 col">
                 <h3>Services</h3>
                 <p>Competitor Insights</p>
                 <p>Competitor Insights Analysis</p>
             </div>
-            <div class="col-md-2 col text-center">
+            <div class="col-md-2 col">
                 <h3>Resources</h3>
                 <p>Data Analysis</p>
                 <p>Market Research</p>
                 <p>Performance Metrics</p>
                 <p>Inventory Insights</p>
             </div>
-            <div class="col-md-2 col text-center">
+            <div class="col-md-2 col">
                 <h3>Pricing</h3>
                 <p>Basic Plan</p>
                 <p>Advanced Plan</p>
                 <p>Custom Plan</p>
             </div>
-            <div class="col-md-2 col text-center">
+            <div class="col-md-2 col">
                 <img src="../static/transparent_logo.png" alt="Logo" class="img-fluid">
                 <div class="footer-text">
                     <h1>Price Prive</h1>
