@@ -70,7 +70,7 @@
         }
 
         .box-1 .text-1 p {
-            /* text-align: center; */
+            text-align: center;
             font-size: 15px;
         }
 
@@ -84,6 +84,9 @@
             /* background-color: #d86767; */
         }
 
+        #sec-2 img{
+            padding: 60px;
+        }
         .box-2 .text-2 h1 {
             font-size: 6vh;
         }
@@ -107,12 +110,12 @@
             border-radius: 15px;
         }
 
-        #sec-3 {
-            /* background-color: #acf3ac; */
+        /* #sec-3 {
+           
             display: flex;
             flex-direction: row;
             margin-top: 70px;
-            /* margin-left: 50px; */
+            margin-left: 50px;
             margin-left: 30px;
             margin-right: 15px;
         }
@@ -121,7 +124,7 @@
         .sec-3 img {
             width: 500px;
             height: 340px;
-            /* border-radius: 15px; */
+            border-radius: 15px;
         }
 
         .sec-3 .box-3 {
@@ -143,7 +146,7 @@
         .box-3 p {
             margin-left: 60px;
             text-align: center;
-        }
+        } */
 
         #sec-6 {
             margin-top: 100px;
@@ -180,7 +183,7 @@
         }
 
         #contact .footer-text p {
-            margin-top: -20px;
+            /* margin-top: -20px; */
             font-size: 3.5vh;
         }
 
@@ -188,7 +191,26 @@
 
         /* Responsive Styles (Add this at the end of your <style> block) */
         @media (max-width: 1200px) {
+            header nav {
+    display: flex
+;
+    gap: 22px;
+}
+            header nav a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.box-1 .text-1 h1 {
+        font-size: 33px;
+    }
+    .box-1 .text-1 p {
+        font-size: 20px;
+        text-align: center;
+    }
+
             #sec-1 {
+                margin-top: 4px;
                 flex-direction: row;
                 align-items: center;
                 gap: 60px;
@@ -227,6 +249,10 @@
             display: flex;
             flex-direction: ;
         } */
+         .box-2 .text-2 p{
+            
+            font-size: 14px;
+         }
 
             .box2-2 .img-box-2 {
                 flex-direction: row;
@@ -344,9 +370,23 @@
             .box-3 p {
                 font-size: 14px;
             }
+
+
+            
         }
 
         @media (max-width: 480px) {
+            body,html{
+                overflow-x: hidden;
+            }
+            #sec-1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-left: 30px;
+        margin-right: 15px;
+        justify-content: center;
+    }
             .box-1 {
                 width: 100%;
             }
@@ -363,25 +403,41 @@
                 font-size: 3vh;
             }
 
+            .img-box-2 img {
+        width: 50%;
+        height: auto;
+    }
+            .box2-2 .img-box-2 {
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .box2-2 .textbox-2 h1{
+        font-size: 1rem;
+    }
+    .box2-2 .textbox-2 p{
+        font-size: 0.8rem;
+    }
+
             #sec-3 {
                 flex-direction: row;
                 align-items: center;
-                /* margin-left: 0;
-            margin-right: 0; */
-                margin-left: 20px;
+    
+                margin-left: 10px;
                 margin-right: 15px;
 
             }
 
             .sec-3 img {
                 width: 45%;
-                height: 296px;
+                height: 250px;
                 margin-left: 20px;
             }
 
             .sec-3 .box-3 {
                 width: 100%;
-                height: 255.7px;
+                height: 210px;
                 padding: 20px;
             }
 
@@ -392,6 +448,38 @@
             .box-3 p {
                 font-size: 12px;
             }
+            .col p{
+                font-size: 12px;
+            }
+            #sec-6 {
+    margin-top: 100px;
+    background-color: #482c24;
+    display: flex
+;
+    flex-direction: row;
+    gap: 5px;
+    height: 300px;
+}
+#services {
+    margin-left: 3px;
+}
+#contact img {
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+}
+#contact .footer-text{
+    margin-right: 2px;
+}
+#contact .footer-text h1 {
+    /* margin-top: -10px; */
+    font-size: 1rem;
+}
+#contact .footer-text p {
+    margin-top: -10px;
+    font-size: 12px;
+}
         }
 
         /* MACBOOK */
@@ -475,54 +563,30 @@
     </header>
     <section class="sec-1" id="sec-1">
         <div class="box-1">
-            <img src="../static/rpic1.avif" alt="">
+            <img src="../static/r-1.avif" alt="">
             <div class="text-1">
-                <h1>Unlock Competitive Insights with PricePrive's Data Analysis Services</h1>
-                <p>At PricePrive, we empower businesses by scraping and analyzing competitor data.<br>
-                    Our comprehensive reports cover key metrics like stock levels, pricing strategies,<br> and inventory
-                    management, helping you make informed decisions to stay ahead in <br>the market. Discover the power
-                    of data-driven insights with our expert services.</p>
+                <h1>Business Intelligence & Analytics.</h1>
+                <p>Gain a clear view of your company’s operations, financial health, and key performance metrics to drive smarter business decisions.</p>
             </div>
         </div>
         <div class="box-1">
-            <img src="../static/rpic2.avif" alt="">
+            <img src="../static/r-2.webp" alt="">
             <div class="text-1">
-                <h1>Unlocking Competitive Insights: Data Analysis for
-                    Business Success</h1>
-                <p>At PricePrive, we empower businesses by providing comprehensive competitor<br> insights. Our data
-                    scraping and analysis services deliver detailed reports on stock,<br> pricing, and inventory
-                    metrics, helping you make informed decisions and stay ahead<br> in the competitive landscape.
-                    Discover the power of data-driven strategies with us.</p>
+                <h1> Market Research & Competitive Analysis.
+                </h1>
+                <p>Stay ahead with data-driven reports on industry trends, competitor strategies, and customer behavior to refine your market approach.</p>
             </div>
         </div>
     </section>
     <section class="sec-2" id="sec-2">
-        <div class="box-2">
-            <div class="text-2">
-                <h1>Competitive Insights</h1>
-                <p>We provide detailed reports on competitors' stock, pricing, and inventory.</p>
-            </div>
-        </div>
-        <div class="box2-2">
-            <div class="img-box-2">
-                <img src="../static/rpic2.avif" alt="">
-                <div class="textbox-2">
-                    <h1>Data Analysis</h1>
-                    <p>Our analysis helps businesses understand market trends and competitor strategies effectively.</p>
-                </div>
-            </div>
-            <div class="img-box-2">
-                <img src="../static/rpic4.avif" alt="">
-                <div class="textbox-2">
-                    <h1>Market Reports</h1>
-                    <p>We deliver comprehensive market reports that guide strategic decision-making for businesses.</p>
-                </div>
-            </div>
-        </div>
+  
+            <img src="../static/reports_sec_2.jpg" alt="">
+      
+       
     </section>
     <section class="sec-3" id="sec-3">
-        <!-- <div class="sec-div-3"> -->
-        <img src="../static/spic4.jpeg" alt="">
+    
+        <!-- <img src="../static/spic4.jpeg" alt="">
         <div class="box-3">
             <p>
                 <span class="fa fa-star checked"></span>
@@ -534,10 +598,10 @@
             <p>Priceprive provided me valuable insights into my competitors' stock and pricing strategies. Highly
                 recommend their analysis!</p>
             <div class="logo-3">
-                <!-- <img src="" alt=""> -->
+               
                 <p>Emily R</p>
             </div>
-        </div>
+        </div> -->
         <!-- </div> -->
 
     </section>
@@ -561,7 +625,7 @@
             <p>Custom Plan</p>
         </div>
         <div class="col" id="contact">
-            <img src="../static/unnamed_Logo.jpeg" alt="">
+            <img src="../static/transparent_logo.png" alt="">
             <div class="footer-text">
                 <h1>Price Prive</h1>
                 <p>support@priceprive.com</p>
