@@ -223,11 +223,6 @@ header nav a:hover {
     margin: 0;
 }
 
-.sec-6  .col  p  a {
-    text-decoration: none;
-    color: white;
-}
-
 /* Keyframes for fade-in animation */
 @keyframes fadeIn {
   to {
