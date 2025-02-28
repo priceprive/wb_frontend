@@ -156,6 +156,75 @@ header nav a:hover:after {
   flex-grow: 1;
 }
 
+.pop-up {
+  display: none; /* Hidden initially */
+  position: fixed;
+  /* justify-content: center;
+  bottom: 30px; */
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  /* background-color: #e7cece; */
+  filter: blur(0.5);
+  background-color: rgba(240, 209, 172, 0.244); 
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top */
+}
+.pop{
+  /* background-color: #fff; */
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  text-align: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 20px;
+  width: 30%;
+  height: 39%;
+ 
+}
+
+.pop h3{
+  margin-top: 80px;
+  font-size: 18px;
+}
+
+.head-ast{
+  /* position: relative;
+  left: 45px; */
+  justify-content: center;
+  display: flex;
+}
+
+.head-ast h2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.astreik {
+  cursor: pointer; 
+  color: rgb(234, 121, 101); 
+  font-weight: bold; 
+  margin-left: 5px;
+  position: relative; 
+  z-index: 10; 
+}
+
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+#close-btn:hover {
+  color: #000;
+}
+
+
 .pricing {
   padding: 15px;
   color: #2E2545;
@@ -261,6 +330,12 @@ header nav a:hover:after {
 #contact .footer-text p {
   font-size: 16px;
   margin: 5px 0;
+}
+
+
+.sec-6  .col  p  a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Animations */
