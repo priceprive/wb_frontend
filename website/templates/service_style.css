@@ -1,0 +1,420 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+header img {
+    height: 40px;
+}
+
+header nav {
+    display: flex;
+    gap: 50px;
+}
+
+header nav a {
+    font-size: 3vh;
+    color: black;
+    text-decoration: none;
+}
+
+#sec-1 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff4f4;
+    width: 100%;
+    height: 700px;
+}
+
+.content-1 h1 {
+    text-align: center;
+    font-size: 5vh;
+}
+
+.content-1 p {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.images1 {
+    /* background-color: #fff; */
+    position: relative;
+    top: 40px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+
+
+}
+
+.images1 .img1 {
+    /* background-color: #dd8282; */
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+
+}
+
+.img1 img {
+    position: relative;
+    left: 0px;
+    width: 100%;
+    padding: 0px;
+
+
+}
+
+.text-1 {
+    padding: 10px;
+    position: relative;
+    left: 0px;
+}
+
+#sec-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.images2 {
+    margin-left: -50px;
+}
+
+.content-2 {
+    align-items: center;
+    text-align: center;
+    margin-top: 4.5%;
+
+}
+
+.content-2 h2 {
+    font-size: 7vh;
+}
+
+.content-2 p {
+    font-size: 3vh;
+}
+
+#sec-3 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-3 h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 7vh;
+}
+
+.content-3 p {
+    position: relative;
+    top: -20px;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.images3 {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 10px; */
+    justify-content: center;
+    width: 80%;
+    position: relative;
+    top: -30px;
+    gap: 70px;
+    padding: 100px;
+    margin: 25px;
+}
+
+.images3 .img3 {
+    padding: 0;
+    margin: 0;
+    /* width: 500px; */
+    /* background-color: #ba7d7d; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.img3-sub {
+    width: 460px;
+    height: 240px;
+    overflow: hidden;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.img3-sub img {
+    width: 460px;
+    object-fit: cover;
+}
+
+.img3 .text h1,
+p {
+    text-align: center;
+}
+
+
+#sec-6 {
+    margin-top: 100px;
+    background-color: #482c24;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    height: 300px;
+}
+
+#services {
+    margin-left: 40px;
+}
+
+
+.col {
+   
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.col p{
+    text-align: left !important;
+}
+
+
+
+#contact img {
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 120px;
+    height: 120px;
+}
+
+#contact .footer-text h1 {
+    /* margin-top: -10px; */
+    font-size: 6vh;
+}
+
+#contact .footer-text p {
+    margin-top: -20px;
+    font-size: 3.5vh;
+}
+
+
+/* Responsive Styles (Add this at the end of your <style> block) */
+@media (max-width: 1200px) {
+    #sec-1 {
+        height: 1000px;
+    }
+
+    .images1 {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .images1 .img1 {
+        width: 45%;
+    }
+
+    .img1 img {
+        width: 100%;
+    }
+
+    #sec-2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .images2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content-2 {
+        margin-top: 20px;
+    }
+
+    .images3 {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 5%;
+        gap: 50px;
+        padding: 50px;
+    }
+
+    .img3-sub {
+        width: 100%;
+        height: auto;
+    }
+
+    .img3-sub img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav {
+        gap: 20px;
+    }
+
+    header nav a {
+        font-size: 2.5vh;
+    }
+
+    #sec-1 {
+        height: 1400px;
+    }
+
+    .content-1 h1 {
+        font-size: 6vh;
+    }
+
+    .content-1 p {
+        font-size: 2.5vh;
+    }
+
+    .images1 .img1 {
+        width: 90%;
+    }
+
+    .content-2 h2 {
+        font-size: 5vh;
+    }
+
+    .content-2 p {
+        font-size: 2.5vh;
+    }
+
+    .content-3 h1 {
+        font-size: 5vh;
+    }
+
+    .content-3 p {
+        font-size: 2.5vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-1 h1 {
+        font-size: 5vh;
+    }
+
+    .content-1 p {
+        font-size: 2vh;
+    }
+
+    .images1 .img1 {
+        width: 100%;
+    }
+
+    .content-2 h2 {
+        font-size: 4vh;
+    }
+
+    .content-2 p {
+        font-size: 2vh;
+    }
+
+    .content-3 h1 {
+        font-size: 4vh;
+    }
+
+    .content-3 p {
+        font-size: 2vh;
+    }
+
+    .images3 {
+        padding: 20px;
+    }
+
+
+}
+
+
+/* MACBOOK */
+
+@media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 784px) and (max-height: 784px) {
+    .img1 .text-1 p {
+        text-align: left;
+    }
+
+    .content-3 h1 {
+        font-size: 6vh;
+    }
+
+    .images3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 10px; */
+        justify-content: center;
+        width: 80%;
+        position: relative;
+        top: -30px;
+        gap: 60px;
+        padding: 100px;
+        margin: 0;
+        margin-left: 50px;
+    }
+
+    .images3 .img3 {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img3-sub {
+        width: 460px;
+        height: 240px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    .img3 .text h1,
+    p {
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    #sec-6 .col p {
+        text-align: left;
+    }
+
+    .col {
+        margin-left: 40px;
+    }
+}

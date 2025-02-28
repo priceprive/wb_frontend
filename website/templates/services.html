@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="" class="service_style.css"> -->
     <style>
         body {
             margin: 0;
@@ -104,7 +105,7 @@
         }
 
         .images2 {
-            margin-left: -50px;
+            /* margin-left: -50px; */
         }
 
         .content-2 {
@@ -138,7 +139,7 @@
 
         .content-3 p {
             position: relative;
-            top: -20px;
+            /* top: -20px; */
             text-align: center;
             font-size: 3vh;
         }
@@ -151,7 +152,7 @@
             justify-content: center;
             width: 80%;
             position: relative;
-            top: -30px;
+            /* top: -30px; */
             gap: 70px;
             padding: 100px;
             margin: 25px;
@@ -228,7 +229,7 @@
         }
 
         #contact .footer-text p {
-            margin-top: -20px;
+            /* margin-top: -20px; */
             font-size: 3.5vh;
         }
 
@@ -236,7 +237,7 @@
         /* Responsive Styles (Add this at the end of your <style> block) */
         @media (max-width: 1200px) {
             #sec-1 {
-                height: 1000px;
+                height: 1300px;
             }
 
             .images1 {
@@ -252,11 +253,18 @@
                 width: 100%;
             }
 
+            .img1 img p{
+                text-align: left;
+            }
             #sec-2 {
                 flex-direction: column;
                 align-items: center;
                 gap: 30px;
                 margin-top: 30px;
+            }
+
+            .content-2 .logo-5 p{
+                margin-left: 0px;
             }
 
             .images2 img {
@@ -266,6 +274,7 @@
 
             .content-2 {
                 margin-top: 20px;
+                /* margin-left: 350px; */
             }
 
             .images3 {
@@ -284,9 +293,65 @@
                 width: 100%;
                 height: 200px;
             }
+
+            .content-3 h1{
+                margin-top: 100px;
+    text-align: center;
+    font-size: 3.6rem;
+            }
+
+            .content-3 p {
+    position: relative;
+    top: -20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+    .img3 .text{
+        margin-left: 2rem;
+    }
+
+    #sec-6 {
+    margin-top: 100px;
+    background-color: #482c24;
+    display: flex
+;
+    flex-direction: row;
+    gap: 20px;
+    height: 300px;
+}
+
+.col {
+    display: flex
+;
+    flex-direction: column;
+    color: white;
+    width: 200px;
+}
+#contact .footer-text h1 {
+    /* margin-top: -10px; */
+    font-size: 37px;
+}
+
+#contact .footer-text p {
+    margin-top: -20px;
+    font-size: 1.5rem;
+}
+
         }
 
         @media (max-width: 768px) {
+            /* body{
+                width: 100%;
+            } */
+
+            body, html {
+    overflow-x: hidden;
+}
+
+.content-1 h1 {
+        font-size: 2.3rem;
+    }
             header {
                 flex-direction: column;
                 gap: 10px;
@@ -301,7 +366,7 @@
             }
 
             #sec-1 {
-                height: 1400px;
+                height: 1500px;
             }
 
             .content-1 h1 {
@@ -316,6 +381,20 @@
                 width: 90%;
             }
 
+            .img1 .text-1 p{
+                text-align: left;
+            }
+
+            .images2 {
+    margin-left: 0px;
+}
+
+.content-2 {
+        margin-top: 5px;
+        /* margin-left: 350px; */
+        padding: 9px;
+    }
+
             .content-2 h2 {
                 font-size: 5vh;
             }
@@ -324,6 +403,10 @@
                 font-size: 2.5vh;
             }
 
+            #sec-3{
+                background-color: #d8a3a3;
+                margin-top: -40px;
+            }
             .content-3 h1 {
                 font-size: 5vh;
             }
@@ -331,9 +414,51 @@
             .content-3 p {
                 font-size: 2.5vh;
             }
+            .images3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin-left: 10px;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .img3 .text p{
+        text-align: left;
+    }
+
+    #sec-6 {
+        margin-top: 100px;
+        background-color: #482c24;
+        display: flex
+;
+        flex-direction: row;
+        gap: 3px;
+        height: 300px;
+    }
+    #contact img {
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+}
+    
+    #contact .footer-text h1 {
+    /* margin-top: -10px; */
+    font-size: 30px;
+}
+
+#contact .footer-text p {
+    margin-top: -20px;
+    font-size: 1rem;
+}
         }
 
         @media (max-width: 480px) {
+
+            #sec-1{
+                display: flex;
+                flex-direction: column;
+            }
             .content-1 h1 {
                 font-size: 5vh;
             }
@@ -344,6 +469,9 @@
 
             .images1 .img1 {
                 width: 100%;
+            }
+            .img1 img{
+                width: 320px !important;
             }
 
             .content-2 h2 {
@@ -363,11 +491,50 @@
             }
 
             .images3 {
-                padding: 20px;
-            }
+        padding: 10px;
+        gap: 30px;
+    }
 
+    #sec-6 {
+        margin-top: 0px;
+        background-color: #482c24;
+        display: flex
+;
+        flex-direction: row;
+        gap: 3px;
+        height: 300px;
+    }
+    #contact img{
+        height: 100px;
+        width: 100px;
+    } 
 
-        }
+    #services {
+    margin-left: 0px;
+}
+
+.col{
+    width: 86px;
+}
+#contact img {
+        height: 70px;
+        width: 70px;
+        margin-left: 10px;
+    }
+#contact .footer-text h1 {
+        margin-top: 20px;
+        font-size: 18px;
+        /* margin-left: 12px; */
+    }
+
+    #contact .footer-text p {
+        margin-top: 10px;
+        font-size: 10px;
+        /* margin-left: 12px; */
+    }
+}
+
+        
 
 
         /* MACBOOK */
@@ -413,11 +580,11 @@
                 margin-left: 40px;
             }
 
-            .img3 .text h1,
+            /* .img3 .text h1,
             p {
                 text-align: left;
                 margin-left: 50px;
-            }
+            } */
 
             #sec-6 .col p {
                 text-align: left;
@@ -445,32 +612,30 @@
     <section class="sec1" id="sec-1">
         <div class="content-1">
             <h1>Competitive Analysis Insights</h1>
-            <p>We provide detailed competitor insights through data scraping and analysis,<br>enhancing your strategic
-                decision-making processes.</p>
+            <p>Stay ahead of the competition with deep, data-driven insights into your rivals’ strategies, strengths, and market positioning. Leverage benchmarking, market share analysis, and strategic gap identification to refine your business approach and outperform industry competitors.</p>
         </div>
         <div class="images1">
             <div class="img1">
-                <img src="../static/contact.jpg" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
+                <img src="../static/s-1.png" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
                 <div class="text-1">
-                    <h2>Data Scraping Services</h2>
-                    <p>Our data scraping services deliver comprehensive reports on stock, pricing, and inventory metrics
-                        for insights.</p>
+                    <h2>Competitor Benchmarking
+                    </h2>
+                    <p>Measure your performance against industry leaders with key metrics, revealing strengths and areas for improvement.</p>
                 </div>
             </div>
             <div class="img1">
-                <img src="../static/pic1.jpeg" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
+                <img src="../static/s-2.jpeg" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
                 <div class="text-1">
-                    <h2>Analytical Reporting Services</h2>
-                    <p>We generate in-depth analytical reports that help you understand market trends and competitor
-                        performance effectively.</p>
+                    <h2> Market Share Analysis
+                    </h2>
+                    <p>Gain clarity on market distribution and competitor dominance to refine your positioning and growth strategies.</p>
                 </div>
             </div>
             <div class="img1">
-                <img src="../static/spic5.jpeg" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
+                <img src="../static/s-3.png" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
                 <div class="text-1">
-                    <h2>Market Trend Analysis</h2>
-                    <p>Our services empower businesses with the insights needed to stay ahead in dynamic market
-                        conditions.</p>
+                    <h2>Strategic Gap Identification</h2>
+                    <p>Uncover untapped opportunities and competitor weaknesses to craft winning strategies and gain an edge.</p>
                 </div>
             </div>
         </div>
@@ -487,54 +652,56 @@
                 <span class="fa fa-star checked "></span>
                 <span class="fa fa-star checked "></span>
             </p>
-            <p>Priceprive provided invaluable insights that transformed our competitive <br> strategy and improved our
-                market positioning significantly.</p>
+            <p>"Priceprive provided invaluable insights that transformed our competitive <br> strategy and improved our
+                market positioning significantly."</p>
             <div class="logo-5">
                 <!-- <img src="" alt=""> -->
-                John Doe
+                <!-- <p>John Doe</p> -->
             </div>
         </div>
     </section>
     <section class="sec-3">
         <div class="content-3">
-            <h1>Competitor Insights</h1>
-            <p>We provide detailed analysis of competitors' stocks and pricing</p>
+            <h1>Industry Intelligence</h1>
+            <p>Gain a comprehensive view of your industry with real-time data on market dynamics, emerging trends, and key player movements to make informed business decisions</p>
         </div>
         <div class="images3">
             <div class="img3">
                 <div class="img3-sub">
-                    <img src="../static/pic1.jpeg" alt="">
+                    <img src="../static/s-3.png" alt="">
                 </div>
                 <div class="text">
-                    <h1>Data Analysis</h1>
-                    <p>Comprehensive reports on inventory and<br> market trends available</p>
+                    <h1>Market Demand Analysis </h1>
+                    <p>Understand customer needs and emerging trends to align your offerings with market demand.
+                    </p>
                 </div>
             </div>
             <div class="img3">
                 <div class="img3-sub">
-                    <img src="../static/spic3.jpeg" alt="">
+                    <img src="../static/s-5.png" alt="">
                 </div>
                 <div class="text">
-                    <h1>Market Research</h1>
-                    <p>In-depth insights into competitor strategies and<br>performance metrics.</p>
+                    <h1>Regulatory & Compliance Tracking</h1>
+                    <p>Stay updated on industry regulations and compliance changes to mitigate risks.
+                    </p>
                 </div>
             </div>
             <div class="img3">
                 <div class="img3-sub">
-                    <img src="../static/spic4.jpeg" alt="">
+                    <img src="../static/unnamed (1).png" alt="">
                 </div>
                 <div class="text">
-                    <h1>Performance Metrics</h1>
-                    <p>Analyze key metrics to enhance your<br> business decisions.</p>
+                    <h1>Emerging Technologies & Innovations</h1>
+                    <p>Track new technologies and innovations shaping your industry for a competitive edge.</p>
                 </div>
             </div>
             <div class="img3">
                 <div class="img3-sub">
-                    <img src="../static/spic5.jpeg" alt="">
+                    <img src="../static/unnamed (2).png" alt="">
                 </div>
                 <div class="text">
-                    <h1>Inventory Insights</h1>
-                    <p>Stay updated on competitors' inventory levels<br> and changes.</p>
+                    <h1> Consumer Behavior Insights</h1>
+                    <p>Analyze purchasing patterns and preferences to tailor strategies that align with market needs.</p>
                 </div>
             </div>
         </div>
@@ -559,7 +726,7 @@
             <p>Custom Plan</p>
         </div>
         <div class="col" id="contact">
-            <img src="../static/unnamed_Logo.jpeg" alt="">
+            <img src="../static/transparent_logo.png" alt="">
             <div class="footer-text">
                 <h1>Price Prive</h1>
                 <p>support@priceprive.com</p>

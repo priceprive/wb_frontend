@@ -130,7 +130,10 @@
 
         .colored-bullets {
             justify-content: center;
-            margin-left: -12px;
+            padding: 10px;
+            position: relative;
+            left: 16px;
+            /* margin-left: -12px; */
         }
 
         .colored-bullets li {
@@ -242,14 +245,22 @@
         }
 
         #contact .footer-text p {
-            margin-top: -20px;
+            /* margin-top: -20px; */
             font-size: 3.5vh;
         }
-
-        @media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 784px) and (max-height: 784px) {
+        @media (max-width: 1200px){
             .Price-cards {
                 width: 181vh;
             }
+
+            .Price-Content {
+            /* background-color: #914c4c; */
+    /* text-align: center; */
+    width: 400px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 550px;
+}
 
             .card-1 .head{
                 text-align: center;
@@ -262,7 +273,7 @@
     background-color: #4a375a;
     border-radius: 10px;
             }
-            .card-4 .head {
+            #card-4 .head {
                 text-align: center;
     justify-content: center;
     align-items: center;
@@ -277,7 +288,7 @@
             #card-4 .head h2 {
                 text-align: center;
         margin-top: 9px;
-        color: white;
+        color: rgb(255, 255, 255);
             }
 
             #card-3 .head {
@@ -314,7 +325,197 @@
 
             .colored-bullets {
                 justify-content: center;
-                margin-left: -12px;
+                /* margin-left: -12px; */
+                margin-top: 3px;
+            }
+
+            .col {
+                margin-left: 40px;
+            }
+
+
+            #sec-6 {
+            margin-top: 100px;
+            background-color: #482c24;
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            width: 1453px;
+        height: 360px;
+        }
+        
+        }
+
+        @media (max-width: 768px){
+            header{
+                gap:450px;
+            }
+            header nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        header nav a {
+            font-size: 2rem;
+            color: rgb(1, 1, 1);
+            text-decoration: none;
+        }
+        .Price-Content {
+            /* background-color: #914c4c; */
+    /* text-align: center; */
+    width: 400px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 550px;
+}
+
+#sec-6 {
+            margin-top: 100px;
+            background-color: #482c24;
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            width: 1000px;
+            height: 300px;
+        }
+        }
+
+
+
+        @media (max-width: 480px){
+            header nav {
+        display: flex;
+        gap: 60px;
+    }
+            header nav a {
+        font-size: 2.6rem;
+        color: rgb(1, 1, 1);
+        text-decoration: none;
+    }
+
+    .Price-cards {
+    margin-top: 90px;
+    display: flex
+;
+    flex-direction: row;
+    margin-left: 20px;
+    gap: 50px;
+    width: 195vh;
+    justify-content: center;
+}
+.card {
+    background-color: #f5e3f7;
+    border: 1px solid blueviolet;
+    width: 230px;
+    height: 470px;
+    border-radius: 10px;
+    box-shadow: 8px 10px 7px rgba(0, 0, 0, 0.1);
+}
+.colored-bullets li {
+    font-size: 16.5px;
+    line-height: 1.7;
+    position: relative;
+}
+#sec-6 {
+        margin-top: 294px;
+        background-color: #482c24;
+        display: flex
+;
+        flex-direction: row;
+        gap: 150px;
+        width: 1716px;
+        height: 400px;
+    }
+    #contact .footer-text h1 {
+    /* margin-top: -10px; */
+    font-size: 5vh;
+}
+#contact .footer-text p {
+    /* margin-top: -20px; */
+    font-size: 3.5vh;
+}
+.Price-Content {
+        /* background-color: #914c4c; */
+        /* text-align: center; */
+        width: 400px;
+        height: 300px;
+        margin-top: 100px;
+        /* align-items: center; */
+        margin-left: 600px;
+        /* justify-content: center; */
+    }
+
+
+        }
+        @media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 784px) and (max-height: 784px) {
+            .Price-cards {
+                width: 181vh;
+            }
+
+            .card-1 .head{
+                text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 22vh;
+    /* position: relative; */
+    height: 6vh;
+    /* top: 5px; */
+    background-color: #4a375a;
+    border-radius: 10px;
+            }
+            #card-4 .head {
+                text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 24vh;
+    /* position: relative; */
+    height: 6vh;
+    /* top: 5px; */
+    background-color: #4a375a;
+    border-radius: 10px;
+            }
+
+            #card-4 .head h2 {
+                text-align: center;
+        margin-top: 9px;
+        color: rgb(255, 255, 255);
+            }
+
+            #card-3 .head {
+                width: 23vh;
+        height: 5.5vh;
+        margin-left: 9px;
+
+
+            }
+
+            #card-3 .head h2 {
+                font-size: 3vh;
+        color: white;
+        position: relative;
+        /* margin-top: 12px; */
+        top: 8px;
+            }
+
+            #card-2 .head {
+                height: 5.5vh;
+                margin-left: 10px;
+
+            }
+
+            #card-2 .head h2 {
+                text-align: center;
+                /* justify-content: center; */
+                align-items: center;
+                /* margin-top: 28px; */
+                color: white;
+                position: relative;
+                top: 7px;
+            }
+
+            .colored-bullets {
+                justify-content: center;
+                /* margin-left: -12px; */
                 margin-top: 3px;
             }
 
@@ -415,7 +616,7 @@
             <p>Custom Plan</p>
         </div>
         <div class="col" id="contact">
-            <img src="../static/unnamed_Logo.jpeg" alt="">
+            <img src="../static/transparent_logo.png" alt="">
             <div class="footer-text">
                 <h1>Price Prive</h1>
                 <p>support@priceprive.com</p>
