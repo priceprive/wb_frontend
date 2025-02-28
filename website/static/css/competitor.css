@@ -60,6 +60,11 @@ section {
   animation: fadeIn 1s forwards; /* Fade-in animation */
 }
 
+#services a{
+  text-decoration: none;
+  
+}
+
 @keyframes fadeIn {
   to {
     opacity: 1;
