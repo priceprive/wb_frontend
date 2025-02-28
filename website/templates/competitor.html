@@ -27,6 +27,10 @@
             <a href="{{ url_for('auth.report') }}">Reports</a>
             <a href="{{ url_for('auth.contact') }}">Contacts</a>
             <a href="{{ url_for('auth.pricing') }}">Pricing</a>
+            <div class="btn">
+                <a href="https://summarizerflask.vercel.app/" class="button">MeetRecap</a>
+            </div>
+            
         </nav>
     </header>
     <section class="section" id="sec-1">
@@ -159,21 +163,21 @@
     <section class="section" id="sec-6">
         <div class="col" id="services">
             <h3>Services</h3>
-            <p>Competitor Insights</p>
-            <p>Competitor Insights Analysis</p>
+            <p><a href="{{ url_for('auth.services') }}#sec-1">Competitor Insights</a></p>
+            <p><a href="{{ url_for('auth.services') }}#sec-3">Competitor Insights Analysis</a></p>
         </div>
         <div class="col" id="resources">
             <h3>Resources</h3>
-            <p>Data Analysis</p>
-            <p>Market Research</p>
-            <p>Performance Metrics</p>
-            <p>Inventory Insights</p>
+            <p><a href="{{ url_for('auth.report') }}#sec-2">Data Analysis</a></p>
+            <p><a href="{{ url_for('auth.report') }}#sec-2">Market Research</a></p>
+            <p><a href="{{ url_for('auth.report') }}#sec-2">Performance Metrics</a></p>
+            <p><a href="{{ url_for('auth.report') }}#sec-2">Inventory Insights</a></p>
         </div>
         <div class="col" id="pricing">
             <h3>Pricing</h3>
-            <p>Basic Plan</p>
-            <p>Advanced Plan</p>
-            <p>Custom Plan</p>
+            <p><a href="{{ url_for('auth.pricing') }}#Price-cards">Basic Plan</a></p>
+            <p><a href="{{ url_for('auth.pricing') }}#Price-cards">Advanced Plan</a></p>
+            <p><a href="{{ url_for('auth.pricing') }}#Price-cards">Custom Plan</a></p>
         </div>
         <div class="col" id="contact">
             <img src="../static/transparent_logo.png" alt="">

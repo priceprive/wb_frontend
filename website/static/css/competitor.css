@@ -53,6 +53,23 @@ header nav a:hover:after {
   width: 100%;
 }
 
+.btn{
+  
+  border-radius: 10px;
+  width: 160px;
+  
+}
+.btn a{
+  font-size: 20px;
+  color: rgb(213, 122, 25);
+  margin-top: 30px;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  top: 4px;
+}
+
 section {
   margin: 0;
   padding: 0;
@@ -378,6 +395,12 @@ section {
   color: black;
   margin-top: 4rem;
 }
+.col p {
+  text-align: left !important;
+  margin: 6px 0;
+  font-size: 16px;
+}
+
 .col:nth-child(4) {
   margin-top: unset;
 }
@@ -395,6 +418,13 @@ section {
 
 #contact .footer-text p {
   font-size: 3.5vh;
+}
+
+
+.section .col  p  a {
+  text-decoration: none;
+  color: #000;
+ 
 }
 
 /* Responsive Styles for 1440 × 784 */
