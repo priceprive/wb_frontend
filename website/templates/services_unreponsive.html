@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    }
+    
+    header img {
+      height: 40px;
+    }
+
+    header nav {
+      display: flex;
+      gap: 50px;
+    }
+
+    header nav a{
+        font-size: 3.5vh;
+        color: black;
+        text-decoration: none;
+    }
+        #sec-1{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff4f4;
+            width: 100%;
+            height: 700px;
+        }
+        .content-1 h1{
+            text-align: center;
+            font-size: 8vh; 
+        }
+        .content-1 p{
+            position: relative;
+            top: -20px;
+            text-align: center;
+            font-size: 3vh;
+        }
+        .images1{
+            /* background-color: #fff; */
+            position: relative;
+            top: 40px;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 0px;
+
+            
+        }
+        .images1 .img1{
+            /* background-color: #dd8282; */
+            display: flex;
+            flex-direction: column;
+            width: 430px;
+            
+            
+        }
+
+        .img1 img{
+            position: relative;
+            left: 0px;
+            width: 400px;
+            padding: 0px;
+            
+
+        }
+        .text-1{
+            padding: 10px;
+            position: relative;
+            left: 0px;
+        }
+
+        #sec-2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 100px;
+            margin-top: 50px;
+        }
+
+        .images2{
+            margin-left: -50px;
+        }
+
+        .content-2{
+            align-items: center;
+            text-align: center;
+            margin-top: 4.5%;
+        
+        }
+
+        .content-2 h2{
+            font-size: 7vh;
+        }
+
+        .content-2 p{
+            font-size: 3vh;
+        }
+
+        #sec-3{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-3 h1{
+            margin-top: 100px;
+            text-align: center;
+            font-size: 7vh; 
+        }
+
+        .content-3 p{
+            position: relative;
+            top: -20px;
+            text-align: center;
+            font-size: 3vh;
+        }
+
+        .images3{
+           
+            display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 10px; */
+    justify-content: center;
+    width: 80%;
+    position: relative;
+    top: -30px;
+    gap: 70px;
+    padding: 100px;
+    margin: 0;
+        }
+        
+        .images3 .img3{
+            padding: 0;
+            margin: 0;
+            /* width: 500px; */
+            /* background-color: #ba7d7d; */
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .img3-sub{
+            width: 460px; 
+            height: 240px; 
+            overflow:hidden;
+            /* border: 1px solid #000; */
+            display: flex;
+            flex-direction: row;
+            border-radius: 10px;
+        }
+        .img3-sub img{
+            width: 460px;
+            object-fit: cover;
+        }
+
+
+        /* .images{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <h1>Logo</h1> -->
+        <img src="../static/Logo.jpeg" alt="" style="width: 80px; height: 80px; padding: 0; margin: 0;">
+        <nav>
+            <a href="{{ url_for('auth.competitor') }}">Home</a>
+            <a href="{{ url_for('auth.services') }}">Services</a>
+            <a href="{{ url_for('auth.report') }}">Reports</a>
+            <a href="{{ url_for('auth.contact') }}">Contacts</a>
+            <a href="{{ url_for('auth.pricing') }}">Pricing</a>
+        </nav>
+    </header>
+    <section class="sec1" id="sec-1">
+        <div class="content-1">
+            <h1>Competitive Analysis Insights</h1>
+            <p>We provide detailed competitor insights through data scraping and analysis,<br>enhancing your strategic decision-making processes.</p>
+        </div>
+        <div class="images1">
+            <div class="img1">
+                <img src="../static/contact.jpg" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
+                <div class="text-1">
+                    <h2>Data Scraping Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, aspernatur laudantium. Ea.</p>
+                </div>
+            </div>
+            <div class="img1">
+                <img src="../static/pic1.jpeg" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
+                <div class="text-1">
+                    <h2>Data Scraping Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, aspernatur laudantium. Ea.</p>
+                </div>
+            </div>
+            <div class="img1">
+                <img src="../static/spic5.jpeg" alt="" style="width: 390px; height: 247px; border-radius: 15px;">
+                <div class="text-1">
+                    <h2>Data Scraping Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing<br>elit. Quidem, aspernatur laudantium. Ea.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-2" id="sec-2">
+        <div class="images2">
+            <img src="../static/rpic2.avif" alt="" style="width: 430px; height: 300px;">
+        </div>
+        <div class="content-2">
+            <p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked "></span>
+                <span class="fa fa-star checked "></span>
+                <span class="fa fa-star checked "></span>
+                <span class="fa fa-star checked "></span>
+            </p>
+            <p>Priceprive provided invaluable insights that transformed our competitive <br> strategy and improved our market positioning significantly.</p>
+            <div class="logo-5">
+                <!-- <img src="" alt=""> -->
+                John Doe
+            </div>
+        </div>
+    </section>
+    <section class="sec-3">
+        <div class="content-3">
+            <h1>Competitor Insights</h1>
+            <p>We provide detailed analysis of competitors' stocks and pricing</p>
+        </div>
+        <div class="images3">
+            <div class="img3">
+                <div class="img3-sub">
+                    <img src="../static/pic1.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h1>Data Analysis</h1>
+                    <p>Comprehensive reports on inventory and<br> market trends available</p>
+                </div>
+            </div>
+            <div class="img3">
+                <div class="img3-sub">
+                    <img src="../static/spic3.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h1>Market Research</h1>
+                    <p>In-depth insights into competitor strategies and<br>performance metrics.</p>
+                </div>
+            </div>
+            <div class="img3">
+                <div class="img3-sub">
+                    <img src="../static/spic4.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h1>Performance Metrics</h1>
+                    <p>Analyze key metrics to enhance your<br> business decisions.</p>
+                </div>
+            </div>
+            <div class="img3">
+                <div class="img3-sub">
+                    <img src="../static/spic5.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h1>Inventory Insights</h1>
+                    <p>Stay updated on competitors' inventory levels<br> and changes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-4">
+
+    </section>
+</body>
+</html>

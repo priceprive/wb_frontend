@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    }
+    
+    header img {
+      height: 40px;
+    }
+
+    header nav {
+      display: flex;
+      gap: 50px;
+    }
+
+    header nav a{
+        font-size: 3.5vh;
+        color: black;
+        text-decoration: none;
+    }
+
+    #sec-1{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-left: 30px;
+        margin-right: 5px;
+    
+        /* padding: 50px; */
+    }
+
+    .box-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        /* background-color: #bc7878; */
+    }
+
+    .box-1 img{
+        width: 570px; 
+        height: 320px;
+        /* height: 247px;  */
+        
+    }
+    .box-1 .text-1 h1{
+        text-align: center;
+        font-size: 4vh; 
+    }
+    .box-1 .text-1 p{
+        /* text-align: center; */
+        font-size: 15px; 
+    }
+
+    #sec-2{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-top: 30px;
+        /* position: relative;
+        top: 100px; */
+        /* background-color: #d86767; */
+    }
+
+    .box-2 .text-2 h1{
+        font-size: 6vh;
+    }
+    .box2-2{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .box2-2 .img-box-2{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        
+    }
+    .img-box-2 img{
+        width: 480px;
+        height: 300px;
+        border-radius: 15px;
+    }
+
+    #sec-3{
+        /* background-color: #acf3ac; */
+        display: flex;
+        flex-direction: row;
+        margin-top: 70px;
+        margin-left: 50px;
+    }
+
+    
+    .sec-3 img{
+        width: 500px;
+        height: 340px; 
+        /* border-radius: 15px; */
+    }
+    .sec-3 .box-3{
+        width: 700px;
+        background-color: #29160b;
+        color: white;
+        height: 340px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .box-3 h1{
+        font-size: 6vh;
+    }
+
+    .box-3 p{
+        margin-left: 60px;
+        text-align: center;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <h1>Logo</h1> -->
+        <img src="../static/Logo.jpeg" alt="" style="width: 80px; height: 80px; padding: 0; margin: 0;">
+        <nav>
+            <a href="{{ url_for('auth.competitor') }}">Home</a>
+            <a href="{{ url_for('auth.services') }}">Services</a>
+            <a href="{{ url_for('auth.report') }}">Reports</a>
+            <a href="{{ url_for('auth.contact') }}">Contacts</a>
+            <a href="{{ url_for('auth.pricing') }}">Pricing</a>
+        </nav>
+    </header>
+    <section class="sec-1" id="sec-1">
+        <div class="box-1">
+            <img src="../static/rpic1.avif" alt="">
+            <div class="text-1">
+                <h1>Unlock Competitive Insights with PricePrive's Data Analysis Services</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus quae iste<br> 
+                    dolorum minima nostrum nam unde rerum quis quod dolores, adipisci autem hic tempore commodi<br>
+                     saepe voluptatem aliquid vitae?</p>
+            </div>
+        </div>
+        <div class="box-1">
+            <img src="../static/rpic2.avif" alt="">
+            <div class="text-1">
+                <h1>Unlock Competitive Insights with PricePrive's Data Analysis Services</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus quae iste<br> 
+                    dolorum minima nostrum nam unde rerum quis quod dolores, adipisci autem hic tempore commodi<br>
+                     saepe voluptatem aliquid vitae?</p>
+            </div>
+        </div>
+    </section>
+    <section class="sec-2" id="sec-2">
+        <div class="box-2">
+            <div class="text-2">
+                <h1>Competitive Insights</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur delectus quae iste<br> 
+                    dolorum </p>
+            </div>
+        </div>
+        <div class="box2-2">
+            <div class="img-box-2">
+                <img src="../static/rpic2.avif" alt="">
+                <div class="textbox-2">
+                    <h1>Data Analysis</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam temporibus eum incidunt!</p>
+                </div>
+            </div>
+            <div class="img-box-2">
+                <img src="../static/rpic4.avif" alt="">
+                <div class="textbox-2">
+                    <h1>Market Reports</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eligendi sed debitis!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-3" id="sec-3">
+        <!-- <div class="sec-div-3"> -->
+            <img src="../static/spic4.jpeg" alt="">
+            <div class="box-3">
+                <h1>******</h1>
+                <p>Price prive Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Assumenda voluptatem veritatis<br> aut unde iure, nisi exercitationem praesentium in mollitia dolore rem, commodi tempore? Numquam,<br> optio ea! Aspernatur nemo eligendi quibusdam.</p>
+                <div class="logo-3">
+                    <!-- <img src="" alt=""> -->
+                    <p>Emily R</p>
+                </div>
+            </div>
+        <!-- </div> -->
+        
+    </section>
+    <section class="sec-4" id="sec-4"></section>
+</body>
+</html>

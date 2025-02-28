@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PricePrive</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="../static/transparent_logo.ico" type="image/x-icon">
+
+    <!-- <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        }
+
+        header img {
+            height: 30px;
+        }
+
+        header nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        header nav a {
+            font-size: 19px;
+
+            color: black;
+            text-decoration: none;
+        }
+
+        #sec-1 {
+            display: flex;
+            flex-direction: row;
+            /* margin-top:70px; */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        .content-1 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+            margin-top: 40px;
+
+        }
+
+        .content-1 h2 {
+            font-size: 36px;
+            margin-left: 100px;
+            /* text-align: center;
+            align-items: center; */
+        }
+
+        .content-1 p {
+            /* margin-top: -20px; */
+            font-size: 17px;
+            margin-left: 100px;
+        }
+
+        .image-section img {
+            margin-left: 100px;
+            margin-top: 70px;
+            width: 140vh;
+            height: 240px;
+        }
+
+        .form-container {
+            position: absolute;
+            right: 12%;
+            top: 50%;
+            transform: translateY(-40%);
+            /* transform: translateX(-40%); */
+            background-color: white;
+            padding: 30px;
+            width: 20%;
+            height: 55%;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        form{
+            /* margin-left: -10px; */
+        }
+
+        input {
+            padding: 10px;
+            margin-top: 10px;
+            width: 240px;
+            height: 15px;
+            border: 0.4px solid rgb(117, 117, 117);
+            border-radius: 14px;
+        }
+
+        textarea {
+            padding: 15px;
+            margin-top: 10px;
+            width: 230px;
+            height: 40px;
+            border: 0.4px solid rgb(117, 117, 117);
+            border-radius: 20px;
+        }
+
+        .form-container button {
+            background-color: black;
+            color: white;
+            width: 170px;
+            height: 40px;
+            border-radius: 20px;
+        }
+
+        #sec-6 {
+            margin-top: 100px;
+            background-color: #482c24;
+            display: flex;
+            flex-direction: row;
+            gap: 150px  !important;
+            width: 100% !important;
+            height: 300px;
+        }
+
+        #services {
+            margin-left: 40px;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+        #contact img {
+            margin-top: 30px;
+            margin-left: 10px;
+            width: 120px;
+            height: 120px;
+        }
+
+        #contact .footer-text h1 {
+            /* margin-top: -10px; */
+            font-size: 5vh !important;
+        }
+
+        #contact .footer-text p {
+            /* margin-top: -20px; */
+            font-size: 3.5vh;
+        }
+
+        @media (max-width: 1200px) {
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 30px;
+                gap: 30px;
+                /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+            }
+
+            header nav a {
+                font-size: 20px;
+                color: black;
+                text-decoration: none;
+            }
+
+            .content-1 h2 {
+                font-size: 3rem;
+                margin-left: 100px;
+            }
+
+            .content-1 p {
+                margin-top: -20px;
+                font-size: 16px;
+                margin-left: 100px;
+            }
+
+            .content-1 {
+                margin-top: 80px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .image-section img {
+                margin-left: 100px;
+                margin-top: 70px;
+                width: 750px;
+                height: 300px;
+            }
+
+            input {
+                padding: 10px;
+                margin-top: 10px;
+                width: 260px;
+                height: 15px;
+                border: 0.4px solid rgb(117, 117, 117);
+                border-radius: 20px;
+            }
+
+            textarea {
+                padding: 15px;
+                margin-top: 10px;
+                width: 250px;
+                height: 60px;
+                border: 0.4px solid rgb(117, 117, 117);
+                border-radius: 20px;
+            }
+
+            .form-container {
+        position: absolute;
+        right: 13%;
+        top: 60%;
+        transform: translateY(-50%);
+        /* transform: translateX(-40%); */
+        background-color: white;
+        padding: 30px;
+        width: 280px;
+        height: 350px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+            #sec-6 {
+                margin-top: 100px;
+                background-color: #482c24;
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+                height: 300px;
+            }
+
+            #contact .footer-text h1 {
+                /* margin-top: -10px; */
+                font-size: 2.5rem;
+            }
+
+            #contact .footer-text p {
+                margin-top: -20px;
+                font-size: 26px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header nav {
+        display: flex
+;
+        gap: 30px;
+    }
+    header {
+        display: flex
+;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+        gap: 160px;
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    }
+    header nav a{
+        font-size: 20px;
+    }
+    .form-container {
+        position: absolute;
+        /* right: -10%; */
+        top: 50%;
+        left: 54%;
+        transform: translateY(-50%);
+        /* transform: translateX(-40%); */
+        background-color: white;
+        padding: 30px;
+        width: 220px;
+        height: 340px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    form{
+        margin-left: -10px;
+    }
+    .image-section img {
+        margin-left: 100px;
+        margin-top: 70px;
+        width: 650px;
+        height: 300px;
+    }
+    .content-1 {
+        margin-left: 20px;
+    }
+    .content-1 h2{
+        font-size: 35px;
+    }
+    input {
+        padding: 10px;
+        margin-top: 10px;
+        width: 230px;
+        height: 15px;
+        border: 0.4px solid rgb(117, 117, 117);
+        border-radius: 20px;
+    }
+    textarea {
+        padding: 15px;
+        margin-top: 10px;
+        width: 220px;
+        height: 60px;
+        border: 0.4px solid rgb(117, 117, 117);
+        border-radius: 20px;
+    }
+            header nav a {
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
+            /* body,html{
+                overflow-x: hidden;
+            } */
+            header nav {
+                display: flex;
+                gap: 30px;
+            }
+        
+
+        #sec-6 {
+        margin-top: 100px;
+        background-color: #482c24;
+        display: flex
+;
+        flex-direction: row;
+        gap: 30px;
+        /* width: 100% !important; */
+        width: 910px !important;
+        height: 300px;
+    }
+    #contact .footer-text h1 {
+        /* margin-top: -10px; */
+        font-size: 1.7rem !important;
+    }
+    #contact .footer-text p {
+        margin-top: -20px;
+        margin-right: 30px;
+        font-size: 20px;
+    }
+        }
+        @media (max-width: 480px) {
+            body {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+            
+            header nav {
+                display: flex;
+                gap: 35px;
+            }
+            header nav a {
+        font-size: 35px;
+        color: black;
+        text-decoration: none;
+    }
+
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 30px;
+                gap: 190px;
+                /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+            }
+            .content-1{
+                margin-top: 150px;
+                margin-left: 40px;
+            }
+            .form-container {
+        position: absolute;
+        top: 80%;
+        /* right: -98%; */
+        left: 600px;
+        transform: translateY(-30%);
+        /* transform: translateX(200%); */
+        background-color: white;
+        padding: 30px;
+        width: 260px;
+        height: 370px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .content-1 p {
+        margin-top: -20px;
+        font-size: 26px;
+        margin-left: 100px;
+    }
+    input {
+        padding: 10px;
+        margin-top: 10px;
+        width: 260px;
+        height: 15px;
+        border: 0.4px solid rgb(117, 117, 117);
+        border-radius: 20px;
+    }
+    textarea {
+        padding: 15px;
+        margin-top: 10px;
+        width: 245px;
+        height: 60px;
+        border: 0.4px solid rgb(117, 117, 117);
+        border-radius: 20px;
+    }
+    form{
+        margin-left: -10px;
+    }
+
+    .image-section img {
+        margin-left: 100px;
+        margin-top: 100px;
+        width: 740px;
+        height: 300px;
+    }
+
+
+    #sec-6 {
+        margin-top: 310px;
+        background-color: #482c24;
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        width: 998px !important;
+        height: 400px;
+    }
+    #contact .footer-text h1 {
+        /* margin-top: -10px; */
+        font-size: 2rem;
+    }
+
+    #contact .footer-text p {
+        margin-top: -20px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+        }
+
+        @media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 784px) and (max-height: 784px) {
+            .form-container {
+                transform: translateY(-60%);
+                width: 26%;
+                height: 50%;
+            }
+
+            .image-section img {
+                margin-left: 100px;
+                margin-top: 140px;
+                width: 150vh;
+                height: 310px;
+            }
+
+            .col {
+                margin-left: 40px;
+            }
+        }
+    </style> -->
+
+    <!-- New Responsive Styles -->
+    <link rel="stylesheet" href="../static/css/contact.css">
+
+
+</head> 
+
+<body>
+    <header>
+        <!-- <h1>Logo</h1> -->
+        <img src="../static/Logo.jpeg" alt="" style="width: 80px; height: 80px; padding: 0; margin: 0;">
+
+        <nav>
+            <a href="{{ url_for('auth.competitor') }}">Home</a>
+            <a href="{{ url_for('auth.services') }}">Services</a>
+            <a href="{{ url_for('auth.report') }}">Reports</a>
+            <a href="{{ url_for('auth.contact') }}">Contacts</a>
+            <a href="{{ url_for('auth.pricing') }}">Pricing</a>
+        </nav>
+    </header>
+    <section class="sec-1" id="sec-1">
+        <div class="content-1">
+            <h2>Contact Us</h2>
+            <p>Reach out to us for insights on<br> competitor analysis, stock, pricing,<br> and inventory data.</p>
+            <div class="image-section">
+                <img src="../static/contact.jpg" alt="Contact Us Image">
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="#" method="post">
+                <label for="name">Enter your first name</label><br>
+                <input type="text" id="name" name="name" placeholder="Your first name here" required><br><br>
+
+                <label for="email">Enter your email address*</label><br>
+                <input type="email" id="email" name="email" placeholder="Your email address here" required><br><br>
+
+                <label for="message">Enter your message*</label><br>
+                <textarea id="message" name="message" placeholder="Your message here" rows="4"
+                    required></textarea><br><br>
+
+                <div class="btn-wrap">
+                    <button type="submit">Submit your request now</button>
+                </div>                
+            </form>
+        </div>
+    </section>
+    <section class="sec-6" id="sec-6">
+        <div class="col" id="services">
+            <h3>Services</h3>
+            <p>Competitor Insights</p>
+            <p>Competitor Insights Analysis</p>
+        </div>
+        <div class="col" id="resources">
+            <h3>Resources</h3>
+            <p>Data Analysis</p>
+            <p>Market Research</p>
+            <p>Performance Metrics</p>
+            <p>Inventory Insights</p>
+        </div>
+        <div class="col" id="pricing">
+            <h3>Pricing</h3>
+            <p>Basic Plan</p>
+            <p>Advanced Plan</p>
+            <p>Custom Plan</p>
+        </div>
+        <div class="col" id="contact">
+            <img src="../static/transparent_logo.png" alt="">
+            <div class="footer-text">
+                <h1>Price Prive</h1>
+                <p>support@priceprive.com</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

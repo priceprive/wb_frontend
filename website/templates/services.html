@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PricePrive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- attach favicon -->
+     <link rel="icon" href="../static/transparent_logo.ico" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" href="" class="service_style.css"> -->
+    <!-- <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        header nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        header nav a {
+            font-size: 3vh;
+            color: black;
+            text-decoration: none;
+        }
+
+        #sec-1 {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff4f4;
+            width: 100%;
+            height: 700px;
+        }
+
+        .content-1 h1 {
+            text-align: center;
+            font-size: 5vh;
+        }
+
+        .content-1 p {
+            position: relative;
+            top: 10px;
+            text-align: center;
+            font-size: 3vh;
+        }
+
+        .images1 {
+            /* background-color: #fff; */
+            position: relative;
+            top: 40px;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+
+
+        }
+
+        .images1 .img1 {
+            /* background-color: #dd8282; */
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+
+
+        }
+
+        .img1 img {
+            position: relative;
+            left: 0px;
+            width: 100%;
+            padding: 0px;
+
+
+        }
+
+        .text-1 {
+            padding: 10px;
+            position: relative;
+            left: 0px;
+        }
+
+        #sec-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 100px;
+            margin-top: 50px;
+        }
+
+        .images2 {
+            /* margin-left: -50px; */
+        }
+
+        .content-2 {
+            align-items: center;
+            text-align: center;
+            margin-top: 4.5%;
+
+        }
+
+        .content-2 h2 {
+            font-size: 7vh;
+        }
+
+        .content-2 p {
+            font-size: 3vh;
+        }
+
+        #sec-3 {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-3 h1 {
+            margin-top: 100px;
+            text-align: center;
+            font-size: 7vh;
+        }
+
+        .content-3 p {
+            position: relative;
+            /* top: -20px; */
+            text-align: center;
+            font-size: 3vh;
+        }
+
+        .images3 {
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* gap: 10px; */
+            justify-content: center;
+            width: 80%;
+            position: relative;
+            /* top: -30px; */
+            gap: 70px;
+            padding: 100px;
+            margin: 25px;
+        }
+
+        .images3 .img3 {
+            padding: 0;
+            margin: 0;
+            /* width: 500px; */
+            /* background-color: #ba7d7d; */
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .img3-sub {
+            width: 460px;
+            height: 240px;
+            overflow: hidden;
+            /* border: 1px solid #000; */
+            display: flex;
+            flex-direction: row;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+
+        .img3-sub img {
+            width: 460px;
+            object-fit: cover;
+        }
+
+        .img3 .text h1,
+        p {
+            text-align: center;
+        }
+
+
+        #sec-6 {
+            margin-top: 100px;
+            background-color: #482c24;
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            height: 300px;
+        }
+
+        #services {
+            margin-left: 40px;
+        }
+
+        
+        .col {
+           
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+        .col p{
+            text-align: left !important;
+        }
+
+
+
+        #contact img {
+            margin-top: 30px;
+            margin-left: 10px;
+            width: 120px;
+            height: 120px;
+        }
+
+        #contact .footer-text h1 {
+            /* margin-top: -10px; */
+            font-size: 6vh;
+        }
+
+        #contact .footer-text p {
+            /* margin-top: -20px; */
+            font-size: 3.5vh;
+        }
+
+
+        /* Responsive Styles (Add this at the end of your <style> block) */
+        @media (max-width: 1200px) {
+            #sec-1 {
+                height: 1300px;
+            }
+
+            .images1 {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .images1 .img1 {
+                width: 45%;
+            }
+
+            .img1 img {
+                width: 100%;
+            }
+
+            .img1 img p{
+                text-align: left;
+            }
+            #sec-2 {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                margin-top: 30px;
+            }
+
+            .content-2 .logo-5 p{
+                margin-left: 0px;
+            }
+
+            .images2 img {
+                width: 100%;
+                height: auto;
+            }
+
+            .content-2 {
+                margin-top: 20px;
+                /* margin-left: 350px; */
+            }
+
+            .images3 {
+                grid-template-columns: repeat(2, 1fr);
+                margin-left: 5%;
+                gap: 50px;
+                padding: 50px;
+            }
+
+            .img3-sub {
+                width: 100%;
+                height: auto;
+            }
+
+            .img3-sub img {
+                width: 100%;
+                height: 200px;
+            }
+
+            .content-3 h1{
+                margin-top: 100px;
+    text-align: center;
+    font-size: 3.6rem;
+            }
+
+            .content-3 p {
+    position: relative;
+    top: -20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+    .img3 .text{
+        margin-left: 2rem;
+    }
+
+    #sec-6 {
+    margin-top: 100px;
+    background-color: #482c24;
+    display: flex
+;
+    flex-direction: row;
+    gap: 20px;
+    height: 300px;
+}
+
+.col {
+    display: flex
+;
+    flex-direction: column;
+    color: white;
+    width: 200px;
+}
+#contact .footer-text h1 {
+    /* margin-top: -10px; */
+    font-size: 37px;
+}
+
+#contact .footer-text p {
+    margin-top: -20px;
+    font-size: 1.5rem;
+}
+
+        }
+
+        @media (max-width: 768px) {
+            /* body{
+                width: 100%;
+            } */
+
+            body, html {
+    overflow-x: hidden;
+}
+
+.content-1 h1 {
+        font-size: 2.3rem;
+    }
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header nav {
+                gap: 20px;
+            }
+
+            header nav a {
+                font-size: 2.5vh;
+            }
+
+            #sec-1 {
+                height: 1500px;
+            }
+
+            .content-1 h1 {
+                font-size: 6vh;
+            }
+
+            .content-1 p {
+                font-size: 2.5vh;
+            }
+
+            .images1 .img1 {
+                width: 90%;
+            }
+
+            .img1 .text-1 p{
+                text-align: left;
+            }
+
+            .images2 {
+    margin-left: 0px;
+}
+
+.content-2 {
+        margin-top: 5px;
+        /* margin-left: 350px; */
+        padding: 9px;
+    }
+
+            .content-2 h2 {
+                font-size: 5vh;
+            }
+
+            .content-2 p {
+                font-size: 2.5vh;
+            }
+
+            #sec-3{
+                background-color: #d8a3a3;
+                margin-top: -40px;
+            }
+            .content-3 h1 {
+                font-size: 5vh;
+            }
+
+            .content-3 p {
+                font-size: 2.5vh;
+            }
+            .images3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin-left: 10px;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .img3 .text p{
+        text-align: left;
+    }
+
+    #sec-6 {
+        margin-top: 100px;
+        background-color: #482c24;
+        display: flex
+;
+        flex-direction: row;
+        gap: 3px;
+        height: 300px;
+    }
+    #contact img {
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+}
+    
+    #contact .footer-text h1 {
+    /* margin-top: -10px; */
+    font-size: 30px;
+}
+
+#contact .footer-text p {
+    margin-top: -20px;
+    font-size: 1rem;
+}
+        }
+
+        @media (max-width: 480px) {
+
+            #sec-1{
+                display: flex;
+                flex-direction: column;
+            }
+            .content-1 h1 {
+                font-size: 5vh;
+            }
+
+            .content-1 p {
+                font-size: 2vh;
+            }
+
+            .images1 .img1 {
+                width: 100%;
+            }
+            .img1 img{
+                width: 320px !important;
+            }
+
+            .content-2 h2 {
+                font-size: 4vh;
+            }
+
+            .content-2 p {
+                font-size: 2vh;
+            }
+
+            .content-3 h1 {
+                font-size: 4vh;
+            }
+
+            .content-3 p {
+                font-size: 2vh;
+            }
+
+            .images3 {
+        padding: 10px;
+        gap: 30px;
+    }
+
+    #sec-6 {
+        margin-top: 0px;
+        background-color: #482c24;
+        display: flex
+;
+        flex-direction: row;
+        gap: 3px;
+        height: 300px;
+    }
+    #contact img{
+        height: 100px;
+        width: 100px;
+    } 
+
+    #services {
+    margin-left: 0px;
+}
+
+.col{
+    width: 86px;
+}
+#contact img {
+        height: 70px;
+        width: 70px;
+        margin-left: 10px;
+    }
+#contact .footer-text h1 {
+        margin-top: 20px;
+        font-size: 18px;
+        /* margin-left: 12px; */
+    }
+
+    #contact .footer-text p {
+        margin-top: 10px;
+        font-size: 10px;
+        /* margin-left: 12px; */
+    }
+}
+
+        
+
+
+        /* MACBOOK */
+
+        @media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 784px) and (max-height: 784px) {
+            .img1 .text-1 p {
+                text-align: left;
+            }
+
+            .content-3 h1 {
+                font-size: 6vh;
+            }
+
+            .images3 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                /* gap: 10px; */
+                justify-content: center;
+                width: 80%;
+                position: relative;
+                top: -30px;
+                gap: 60px;
+                padding: 100px;
+                margin: 0;
+                margin-left: 50px;
+            }
+
+            .images3 .img3 {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img3-sub {
+                width: 460px;
+                height: 240px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: row;
+                border-radius: 10px;
+                align-items: center;
+                margin-left: 40px;
+            }
+
+            /* .img3 .text h1,
+            p {
+                text-align: left;
+                margin-left: 50px;
+            } */
+
+            #sec-6 .col p {
+                text-align: left;
+            }
+
+            .col {
+                margin-left: 40px;
+            }
+        }
+    </style> -->
+
+    <!-- New Responsive Styles -->
+     <link rel="stylesheet" href="../static/css/services.css">
+
+
+</head>
+
+<body>
+    <header>
+        <!-- <h1>Logo</h1> -->
+        <img src="../static/Logo.jpeg" alt="" style="width: 80px; height: 80px; padding: 0; margin: 0;">
+        <nav>
+            <a href="{{ url_for('auth.competitor') }}">Home</a>
+            <a href="{{ url_for('auth.services') }}">Services</a>
+            <a href="{{ url_for('auth.report') }}">Reports</a>
+            <a href="{{ url_for('auth.contact') }}">Contacts</a>
+            <a href="{{ url_for('auth.pricing') }}">Pricing</a>
+        </nav>
+    </header>
+    <section class="sec1" id="sec-1">
+        <div class="content-1">
+            <h1>Competitive Analysis Insights</h1>
+            <p>Stay ahead of the competition with deep, data-driven insights into your rivals’ strategies, strengths, and market positioning. Leverage benchmarking, market share analysis, and strategic gap identification to refine your business approach and outperform industry competitors.</p>
+        </div>
+        <div class="images1">
+            <div class="img1">
+                <img src="../static/s-1.png" alt="">
+                <div class="text-1">
+                    <h2>Competitor Benchmarking
+                    </h2>
+                    <p>Measure your performance against industry leaders with key metrics, revealing strengths and areas for improvement.</p>
+                </div>
+            </div>
+            <div class="img1">
+                <img src="../static/s-2.jpeg" alt="">
+                <div class="text-1">
+                    <h2> Market Share Analysis
+                    </h2>
+                    <p>Gain clarity on market distribution and competitor dominance to refine your positioning and growth strategies.</p>
+                </div>
+            </div>
+            <div class="img1">
+                <img src="../static/s-3.png" alt="">
+                <div class="text-1">
+                    <h2>Strategic Gap Identification</h2>
+                    <p>Uncover untapped opportunities and competitor weaknesses to craft winning strategies and gain an edge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-2" id="sec-2">
+        <div class="images2">
+            <img src="../static/rpic2.avif" alt="">
+        </div>
+        <div class="content-2">
+            <p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked "></span>
+                <span class="fa fa-star checked "></span>
+                <span class="fa fa-star checked "></span>
+                <span class="fa fa-star checked "></span>
+            </p>
+            <p>"Priceprive provided invaluable insights that transformed our competitive <br> strategy and improved our
+                market positioning significantly."</p>
+            <div class="logo-5">
+                <!-- <img src="" alt=""> -->
+                <!-- <p>John Doe</p> -->
+            </div>
+        </div>
+    </section>
+    <section class="sec-3">
+        <div class="content-3">
+            <h1>Industry Intelligence</h1>
+            <p>Gain a comprehensive view of your industry with real-time data on market dynamics, emerging trends, and key player movements to make informed business decisions</p>
+        </div>
+        <div class="images3">
+            <div class="img3">
+                <div class="img3-sub">
+                    <img src="../static/s-3.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Market Demand Analysis </h1>
+                    <p>Understand customer needs and emerging trends to align your offerings with market demand.
+                    </p>
+                </div>
+            </div>
+            <div class="img3">
+                <div class="img3-sub">
+                    <img src="../static/s-5.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Regulatory & Compliance Tracking</h1>
+                    <p>Stay updated on industry regulations and compliance changes to mitigate risks.
+                    </p>
+                </div>
+            </div>
+            <div class="img3">
+                <div class="img3-sub">
+                    <img src="../static/services img 1.png" alt="">
+                </div>
+                <div class="text">
+                    <h1>Emerging Technologies & Innovations</h1>
+                    <p>Track new technologies and innovations shaping your industry for a competitive edge.</p>
+                </div>
+            </div>
+            <div class="img3">
+                <div class="img3-sub">
+                    <img src="../static/services img 2.png" alt="">
+                </div>
+                <div class="text">
+                    <h1> Consumer Behavior Insights</h1>
+                    <p>Analyze purchasing patterns and preferences to tailor strategies that align with market needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-6" id="sec-6">
+        <div class="col" id="services">
+            <h3>Services</h3>
+            <p>Competitor Insights</p>
+            <p>Competitor Insights Analysis</p>
+        </div>
+        <div class="col" id="resources">
+            <h3>Resources</h3>
+            <p>Data Analysis</p>
+            <p>Market Research</p>
+            <p>Performance Metrics</p>
+            <p>Inventory Insights</p>
+        </div>
+        <div class="col" id="pricing">
+            <h3>Pricing</h3>
+            <p>Basic Plan</p>
+            <p>Advanced Plan</p>
+            <p>Custom Plan</p>
+        </div>
+        <div class="col" id="contact">
+            <img src="../static/transparent_logo.png" alt="">
+            <div class="footer-text">
+                <h1>Price Prive</h1>
+                <p>support@priceprive.com</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PricePrive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- attach favicon -->
+     <link rel="icon" href="../static/transparent_logo.ico" type="image/x-icon">
+
+
+    <!-- <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        header nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        header nav a {
+            font-size: 3vh;
+            color: black;
+            text-decoration: none;
+        }
+
+        #sec-1 {
+
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            margin-left: 30px;
+            margin-right: 15px;
+
+            /* padding: 50px; */
+        }
+
+        .box-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            /* background-color: #bc7878; */
+        }
+
+        .box-1 img {
+            width: 560px;
+            height: 320px;
+            /* height: 247px;  */
+
+        }
+
+        .box-1 .text-1 h1 {
+            text-align: center;
+            font-size: 4vh;
+        }
+
+        .box-1 .text-1 p {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        #sec-2 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            margin-top: 30px;
+            /* position: relative;
+        top: 100px; */
+            /* background-color: #d86767; */
+        }
+
+        #sec-2 img{
+            padding: 60px;
+        }
+        .box-2 .text-2 h1 {
+            font-size: 6vh;
+        }
+
+        .box2-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .box2-2 .img-box-2 {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+
+        }
+
+        .img-box-2 img {
+            width: 480px;
+            height: 300px;
+            border-radius: 15px;
+        }
+
+        /* #sec-3 {
+           
+            display: flex;
+            flex-direction: row;
+            margin-top: 70px;
+            margin-left: 50px;
+            margin-left: 30px;
+            margin-right: 15px;
+        }
+
+
+        .sec-3 img {
+            width: 500px;
+            height: 340px;
+            border-radius: 15px;
+        }
+
+        .sec-3 .box-3 {
+            width: 700px;
+            background-color: #29160b;
+            color: white;
+            height: 340px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box-3 h1 {
+            font-size: 6vh;
+        }
+
+        .box-3 p {
+            margin-left: 60px;
+            text-align: center;
+        } */
+
+        #sec-6 {
+            margin-top: 100px;
+            background-color: #482c24;
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            height: 300px;
+        }
+
+        #services {
+            margin-left: 40px;
+        }
+
+        
+        .col {
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+
+
+        #contact img {
+            margin-top: 30px;
+            margin-left: 10px;
+            width: 120px;
+            height: 120px;
+        }
+
+        #contact .footer-text h1 {
+            /* margin-top: -10px; */
+            font-size: 6vh;
+        }
+
+        #contact .footer-text p {
+            /* margin-top: -20px; */
+            font-size: 3.5vh;
+        }
+
+
+
+        /* Responsive Styles (Add this at the end of your <style> block) */
+        @media (max-width: 1200px) {
+            header nav {
+    display: flex
+;
+    gap: 22px;
+}
+            header nav a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.box-1 .text-1 h1 {
+        font-size: 33px;
+    }
+    .box-1 .text-1 p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+            #sec-1 {
+                margin-top: 4px;
+                flex-direction: row;
+                align-items: center;
+                gap: 60px;
+                /* margin-left: 0;
+            margin-right: 0; */
+                justify-content: center;
+                margin-left: 30px;
+                margin-right: 15px;
+            }
+
+            .box-1 {
+                width: 40%;
+            }
+
+            .box-1 img {
+                margin: 20px;
+                width: 96%;
+                height: 250px;
+            }
+
+            .box-1 .text-1 h1 {
+                font-size: 3.5vh;
+            }
+
+            .box-1 .text-1 p {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            #sec-2 {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            /* .box2-2{
+            display: flex;
+            flex-direction: ;
+        } */
+         .box-2 .text-2 p{
+            
+            font-size: 14px;
+         }
+
+            .box2-2 .img-box-2 {
+                flex-direction: row;
+                gap: 70px;
+                align-items: center;
+            }
+
+            .img-box-2 img {
+                width: 40%;
+                height: auto;
+            }
+
+            #sec-3 {
+                flex-direction: row;
+                align-items: center;
+                /* margin-left: 0;
+            margin-right: 0; */
+                margin-left: 30px;
+                margin-right: 15px;
+
+            }
+
+            .sec-3 img {
+                width: 45%;
+                height: 296px;
+                margin-left: 20px;
+            }
+
+            .sec-3 .box-3 {
+                width: 100%;
+                height: 255.7px;
+                padding: 20px;
+            }
+
+            .box-3 p {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header nav {
+                gap: 20px;
+            }
+
+            header nav a {
+                font-size: 2.5vh;
+            }
+
+            #sec-1 {
+                flex-direction: column;
+                align-items: center;
+                gap: 60px;
+                /* margin-left: 0;
+            margin-right: 0; */
+                margin-left: 30px;
+                margin-right: 15px;
+                justify-content: center;
+            }
+
+            .box-1 img {
+                margin: 20px;
+                width: 70%;
+                height: 250px;
+            }
+
+
+
+            .box-1 {
+                width: 90%;
+            }
+
+            .box-1 .text-1 h1 {
+                font-size: 3vh;
+            }
+
+            .box-1 .text-1 p {
+                font-size: 12px;
+            }
+
+            .box-2 .text-2 h1 {
+                font-size: 4vh;
+            }
+
+            #sec-3 {
+                flex-direction: row;
+                align-items: center;
+                /* margin-left: 0;
+            margin-right: 0; */
+                margin-left: 16px;
+                margin-right: 20px;
+
+            }
+
+            .sec-3 img {
+                width: 45%;
+                height: 266px;
+                margin-left: 20px;
+            }
+
+            .sec-3 .box-3 {
+                width: 100%;
+                height: 226px;
+                padding: 20px;
+            }
+
+            .box-3 h1 {
+                font-size: 4vh;
+            }
+
+            .box-3 p {
+                font-size: 14px;
+            }
+
+
+            
+        }
+
+        @media (max-width: 480px) {
+            body,html{
+                overflow-x: hidden;
+            }
+            #sec-1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-left: 30px;
+        margin-right: 15px;
+        justify-content: center;
+    }
+            .box-1 {
+                width: 100%;
+            }
+
+            .box-1 .text-1 h1 {
+                font-size: 2.5vh;
+            }
+
+            .box-1 .text-1 p {
+                font-size: 10px;
+            }
+
+            .box-2 .text-2 h1 {
+                font-size: 3vh;
+            }
+
+            .img-box-2 img {
+        width: 50%;
+        height: auto;
+    }
+            .box2-2 .img-box-2 {
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .box2-2 .textbox-2 h1{
+        font-size: 1rem;
+    }
+    .box2-2 .textbox-2 p{
+        font-size: 0.8rem;
+    }
+
+            #sec-3 {
+                flex-direction: row;
+                align-items: center;
+    
+                margin-left: 10px;
+                margin-right: 15px;
+
+            }
+
+            .sec-3 img {
+                width: 45%;
+                height: 250px;
+                margin-left: 20px;
+            }
+
+            .sec-3 .box-3 {
+                width: 100%;
+                height: 210px;
+                padding: 20px;
+            }
+
+            .box-3 h1 {
+                font-size: 3vh;
+            }
+
+            .box-3 p {
+                font-size: 12px;
+            }
+            .col p{
+                font-size: 12px;
+            }
+            #sec-6 {
+    margin-top: 100px;
+    background-color: #482c24;
+    display: flex
+;
+    flex-direction: row;
+    gap: 5px;
+    height: 300px;
+}
+#services {
+    margin-left: 3px;
+}
+#contact img {
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+}
+#contact .footer-text{
+    margin-right: 2px;
+}
+#contact .footer-text h1 {
+    /* margin-top: -10px; */
+    font-size: 1rem;
+}
+#contact .footer-text p {
+    margin-top: -10px;
+    font-size: 12px;
+}
+        }
+
+        /* MACBOOK */
+        @media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 784px) and (max-height: 784px) {
+            #sec-1 {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                margin-left: 30px;
+                margin-right: 15px;
+                /* padding: 50px; */
+                justify-content: center;
+                gap: 50px;
+            }
+
+            .box-1 img {
+                width: 100%;
+                height: 320px;
+                /* height: 247px; */
+            }
+
+            .box-1 .text-1 h1 {
+                /* text-align: center; */
+                font-size: 3.4vh;
+            }
+
+            .box-1 .text-1 p {
+                /* text-align: center; */
+                font-size: 16px;
+                /* text-align: center; */
+            }
+
+            #sec-3 {
+                /* background-color: #acf3ac; */
+                display: flex;
+                flex-direction: row;
+                margin-top: 70px;
+                /* margin-left: 50px; */
+                margin-left: 60px;
+                margin-right: 15px;
+                justify-content: center;
+            }
+
+            .sec-3 img {
+                width: 500px;
+                height: 340px;
+                margin-left: 30px;
+                /* border-radius: 15px; */
+            }
+
+            .sec-3 .box-3 {
+                width: 830px;
+                background-color: #29160b;
+                color: white;
+                height: 340px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-right: 74px;
+            }
+
+            .col {
+                margin-left: 40px;
+            }
+        }
+    </style> -->
+
+    <!-- New Responsive Style -->
+     <link rel="stylesheet" href="../static/css/report.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- <h1>Logo</h1> -->
+        <img src="../static/Logo.jpeg" alt="" style="width: 80px; height: 80px; padding: 0; margin: 0;">
+        <nav>
+            <a href="{{ url_for('auth.competitor') }}">Home</a>
+            <a href="{{ url_for('auth.services') }}">Services</a>
+            <a href="{{ url_for('auth.report') }}">Reports</a>
+            <a href="{{ url_for('auth.contact') }}">Contacts</a>
+            <a href="{{ url_for('auth.pricing') }}">Pricing</a>
+        </nav>
+    </header>
+    <section class="sec-1" id="sec-1">
+        <div class="box-1">
+            <img src="../static/r-1.avif" alt="">
+            <div class="text-1">
+                <h1>Business Intelligence & Analytics.</h1>
+                <p>Gain a clear view of your company’s operations, financial health, and key performance metrics to drive smarter business decisions.</p>
+            </div>
+        </div>
+        <div class="box-1">
+            <img src="../static/r-2.webp" alt="">
+            <div class="text-1">
+                <h1> Market Research & Competitive Analysis.
+                </h1>
+                <p>Stay ahead with data-driven reports on industry trends, competitor strategies, and customer behavior to refine your market approach.</p>
+            </div>
+        </div>
+    </section>
+    <section class="sec-2" id="sec-2">
+  
+            <img src="../static/reports_sec_2.jpg" alt="">
+      
+       
+    </section>
+    <section class="sec-3" id="sec-3">
+    
+        <!-- <img src="../static/spic4.jpeg" alt="">
+        <div class="box-3">
+            <p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked "></span>
+                <span class="fa fa-star checked "></span>
+                <span class="fa fa-star checked "></span>
+                <span class="fa fa-star checked "></span>
+            </p>
+            <p>Priceprive provided me valuable insights into my competitors' stock and pricing strategies. Highly
+                recommend their analysis!</p>
+            <div class="logo-3">
+               
+                <p>Emily R</p>
+            </div>
+        </div> -->
+        <!-- </div> -->
+
+    </section>
+    <section class="sec-6" id="sec-6">
+        <div class="col" id="services">
+            <h3>Services</h3>
+            <p>Competitor Insights</p>
+            <p>Competitor Insights Analysis</p>
+        </div>
+        <div class="col" id="resources">
+            <h3>Resources</h3>
+            <p>Data Analysis</p>
+            <p>Market Research</p>
+            <p>Performance Metrics</p>
+            <p>Inventory Insights</p>
+        </div>
+        <div class="col" id="pricing">
+            <h3>Pricing</h3>
+            <p>Basic Plan</p>
+            <p>Advanced Plan</p>
+            <p>Custom Plan</p>
+        </div>
+        <div class="col" id="contact">
+            <img src="../static/transparent_logo.png" alt="">
+            <div class="footer-text">
+                <h1>Price Prive</h1>
+                <p>support@priceprive.com</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

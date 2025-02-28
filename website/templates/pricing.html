@@ -1,125 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PricePrive</title>
+
+    <!-- Attach Favicon -->
+    <link rel="icon" href="../static/transparent_logo.ico" type="image/x-icon">
+<!-- 
     <style>
-        body{
-            background-color: white;
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
         }
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 15px 30px;
-      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-    }
-    header img {
-      height: 40px;
-    }
-    header nav {
-      display: flex;
-      gap: 20px;
-    }
-    header a {
-      text-decoration: none;
-      color: #333;
-      font-size: 16px;
-      font-weight: 500;
-    }
-    header nav .button {
-    background-color: #ff7f50;
-    padding: 8px 12px;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: bold;
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        header nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        header nav a {
+            font-size: 3vh;
+            color: black;
+            text-decoration: none;
+        }
+
+        .Price-Content {
+            text-align: center;
+            /* margin-left: 40px */
+        }
+
+        .Price-Content h1 {
+            font-size: 6vh;
+        }
+
+        .Price-Content p {
+            font-size: 3vh;
+            word-spacing: 3px;
+            /* margin-top: -0px; */
+        }
+
+
+
+        .Price-cards {
+            margin-top: 90px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            gap: 30px;
+            width: 195vh;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #f5e3f7;
+            border: 1px solid blueviolet;
+            width: 200px;
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 8px 10px 7px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            z-index: 2
+        }
+
+        #card-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #card-1 .head {
+            justify-content: center;
+            align-items: center;
+            width: 22vh;
+            height: 6vh;
+            background-color: #4a375a;
+            border-radius: 10px;
+        }
+
+        #card-1 .head h2 {
+
+            text-align: center;
+            margin-top: 5px;
+            color: white;
+        }
+
+        #card-1 p {
+            margin-top: 10px;
+            color: black;
+            text-align: center;
+            font-size: 2.5vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+        .pricing {
+            font-family: Arial, sans-serif;
+            color: #2E2545;
+            /* Dark purple similar to the image */
+            padding: 10px;
+            margin-left: px;
+            width: max-content;
+            border-radius: 5px;
+        }
+
+        .pricing p {
+            font-size: 2.4vh;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 17px;
+            /* Adjust as needed */
+        }
+
+        .colored-bullets {
+            justify-content: center;
+            padding: 10px;
+            position: relative;
+            left: 16px;
+            /* margin-left: -12px; */
+        }
+
+        .colored-bullets li {
+            font-size: 13.5px;
+            /* Normal text size */
+            line-height: 1.7;
+            position: relative;
+        }
+
+        #card-2 .head {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 22vh;
+            height: 5vh;
+            background-color: #4a375a;
+            border-radius: 10px;
+            margin-left: 35px;
+        }
+
+        #card-2 .head h2 {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            /* position: relative;
+            top: 3px; */
+            /* margin-top: 28px; */
+            color: white;
+        }
+
+        #card-3 .head {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 30vh;
+            height: 5vh;
+            background-color: #4a375a;
+            border-radius: 10px;
+            margin-left: 11px;
+        }
+
+        #card-3 .head h2 {
+            font-size: 4.3vh;
+            color: white;
+        }
+
+        #card-4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #card-4 .head {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 29vh;
+            height: 6vh;
+            background-color: #4a375a;
+            border-radius: 10px;
+        }
+
+        #card-4 .head h2 {
+
+            text-align: center;
+            margin-top: 5px;
+            color: white;
+        }
+
+        #card-4 p {
+            text-align: center;
+            font-size: 2.5vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 10px;
+            color: black;
+        }
+
+        #sec-6 {
+            margin-top: 100px;
+            background-color: #482c24;
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            height: 300px;
+        }
+
+        #services {
+            margin-left: 40px;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+        #contact img {
+            margin-top: 30px;
+            margin-left: 10px;
+            width: 120px;
+            height: 120px;
+        }
+
+        #contact .footer-text h1 {
+            /* margin-top: -10px; */
+            font-size: 6vh;
+        }
+
+        #contact .footer-text p {
+            /* margin-top: -20px; */
+            font-size: 3.5vh;
+        }
+        @media (max-width: 1200px){
+            .Price-cards {
+                width: 181vh;
+            }
+
+            .Price-Content {
+            /* background-color: #914c4c; */
+    /* text-align: center; */
+    width: 400px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 550px;
 }
 
-    .price-box{
-        /* background-color: #e88383; */
+            .card-1 .head{
+                text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 22vh;
+    /* position: relative; */
+    height: 6vh;
+    /* top: 5px; */
+    background-color: #4a375a;
+    border-radius: 10px;
+            }
+            #card-4 .head {
+                text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 24vh;
+    /* position: relative; */
+    height: 6vh;
+    /* top: 5px; */
+    background-color: #4a375a;
+    border-radius: 10px;
+            }
+
+            #card-4 .head h2 {
+                text-align: center;
+        margin-top: 9px;
+        color: rgb(255, 255, 255);
+            }
+
+            #card-3 .head {
+                width: 23vh;
+        height: 5.5vh;
+        margin-left: 9px;
+
+
+            }
+
+            #card-3 .head h2 {
+                font-size: 3vh;
+        color: white;
+        position: relative;
+        /* margin-top: 12px; */
+        top: 8px;
+            }
+
+            #card-2 .head {
+                height: 5.5vh;
+                margin-left: 10px;
+
+            }
+
+            #card-2 .head h2 {
+                text-align: center;
+                /* justify-content: center; */
+                align-items: center;
+                /* margin-top: 28px; */
+                color: white;
+                position: relative;
+                top: 7px;
+            }
+
+            .colored-bullets {
+                justify-content: center;
+                /* margin-left: -12px; */
+                margin-top: 3px;
+            }
+
+            .col {
+                margin-left: 40px;
+            }
+
+
+            #sec-6 {
+            margin-top: 100px;
+            background-color: #482c24;
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            width: 1453px;
+        height: 360px;
+        }
+        
+        }
+
+        @media (max-width: 768px){
+            header{
+                gap:450px;
+            }
+            header nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        header nav a {
+            font-size: 2rem;
+            color: rgb(1, 1, 1);
+            text-decoration: none;
+        }
+        .Price-Content {
+            /* background-color: #914c4c; */
+    /* text-align: center; */
+    width: 400px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 550px;
+}
+
+#sec-6 {
+            margin-top: 100px;
+            background-color: #482c24;
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            width: 1000px;
+            height: 300px;
+        }
+        }
+
+
+
+        @media (max-width: 480px){
+            header nav {
         display: flex;
-        justify-content: space-around;
+        gap: 60px;
+    }
+            header nav a {
+        font-size: 2.6rem;
+        color: rgb(1, 1, 1);
+        text-decoration: none;
+    }
+
+    .Price-cards {
+    margin-top: 90px;
+    display: flex
+;
+    flex-direction: row;
+    margin-left: 20px;
+    gap: 50px;
+    width: 195vh;
+    justify-content: center;
+}
+.card {
+    background-color: #f5e3f7;
+    border: 1px solid blueviolet;
+    width: 230px;
+    height: 470px;
+    border-radius: 10px;
+    box-shadow: 8px 10px 7px rgba(0, 0, 0, 0.1);
+}
+.colored-bullets li {
+    font-size: 16.5px;
+    line-height: 1.7;
+    position: relative;
+}
+#sec-6 {
+        margin-top: 294px;
+        background-color: #482c24;
+        display: flex
+;
+        flex-direction: row;
+        gap: 150px;
+        width: 1716px;
         height: 400px;
-        width:auto;
-        padding: 0;
-        margin: 0;
     }
-
-   
-    .content1 {
-        margin-top: 0px;
+    #contact .footer-text h1 {
+    /* margin-top: -10px; */
+    font-size: 5vh;
+}
+#contact .footer-text p {
+    /* margin-top: -20px; */
+    font-size: 3.5vh;
+}
+.Price-Content {
+        /* background-color: #914c4c; */
+        /* text-align: center; */
+        width: 400px;
         height: 300px;
-        width: 270px;
+        margin-top: 100px;
+        /* align-items: center; */
+        margin-left: 600px;
+        /* justify-content: center; */
     }
-    .content1 img{
-      width: 500px;
-    }
-   
 
 
-    form {
-      max-width: 500px;
-      height: 150px;
-      margin: 0 auto;
-      background: #f9f9b7;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    form input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0px;
-      border: 1px solid #f79191;
-      border-radius: 5px;
-      font-size: 14px;
-    }
-    form button {
-      width: 100%;
-      padding: 10px;
-      background-color: #f7b860;
-      /* color: white; */
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    form button:hover {
-      background-color: #d39a3f;
-    }
-    </style>
+        }
+        @media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 784px) and (max-height: 784px) {
+            .Price-cards {
+                width: 181vh;
+            }
+
+            .card-1 .head{
+                text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 22vh;
+    /* position: relative; */
+    height: 6vh;
+    /* top: 5px; */
+    background-color: #4a375a;
+    border-radius: 10px;
+            }
+            #card-4 .head {
+                text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 24vh;
+    /* position: relative; */
+    height: 6vh;
+    /* top: 5px; */
+    background-color: #4a375a;
+    border-radius: 10px;
+            }
+
+            #card-4 .head h2 {
+                text-align: center;
+        margin-top: 9px;
+        color: rgb(255, 255, 255);
+            }
+
+            #card-3 .head {
+                width: 23vh;
+        height: 5.5vh;
+        margin-left: 9px;
+
+
+            }
+
+            #card-3 .head h2 {
+                font-size: 3vh;
+        color: white;
+        position: relative;
+        /* margin-top: 12px; */
+        top: 8px;
+            }
+
+            #card-2 .head {
+                height: 5.5vh;
+                margin-left: 10px;
+
+            }
+
+            #card-2 .head h2 {
+                text-align: center;
+                /* justify-content: center; */
+                align-items: center;
+                /* margin-top: 28px; */
+                color: white;
+                position: relative;
+                top: 7px;
+            }
+
+            .colored-bullets {
+                justify-content: center;
+                /* margin-left: -12px; */
+                margin-top: 3px;
+            }
+
+            .col {
+                margin-left: 40px;
+            }
+        }
+    </style> -->
+
+    <!-- Attach New Responsive Style -->
+     <link rel="stylesheet" href="../static/css/pricing.css">
+
 </head>
+
 <body>
     <header>
-        <h1>Logo</h1>
-        <nav>
-          <a href="{{ url_for('auth.product') }}">Products</a>
-          <a href="#">Solutions</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="{{ url_for('auth.company') }}">Company</a>
-          <a href="#" class="button">Try For Free</a>
-        </nav>
-      </header>
-    <main>
-        <section>
-            <div class="price-box">
-            <div class="content1">
-              <img src="static/price.jpg" alt="">
-                <!-- <h1>Unlock Your Perfect Prices by Simply Entering the Number of SKUs You Need!</h1> -->
-            </div>
-            <div class="price-calculator">
-                <h2>Price Calculator</h2>
-                <div class="calculator">
-                    <form id="sku-price-calculator">
-                        <input type="number" id="number" name="number" placeholder="Enter the No. of SKUs" required>
-                        <button type="submit">Get the Price</button>
-                      </form>
-                </div>
-            </div>
-            </div>
-        </section>
-    </main>
+        <img src="../static/Logo.jpeg" alt="" style="width: 80px; height: 80px; padding: 0; margin: 0;">
 
+        <nav>
+            <a href="{{ url_for('auth.competitor') }}">Home</a>
+            <a href="{{ url_for('auth.services') }}">Services</a>
+            <a href="{{ url_for('auth.report') }}">Reports</a>
+            <a href="{{ url_for('auth.contact') }}">Contacts</a>
+            <a href="{{ url_for('auth.pricing') }}">Pricing</a>
+        </nav>
+    </header>
+    <section class="Price-Content">
+        <h1>Pricing</h1>
+        <p>Build on index for free with your company. Upgrade for <br>unlimited dashboards, editors, connections and
+            dedicated<br> exterprise features.</p>
+    </section>
+    <section class="Price-cards">
+        <div class="card" id="card-1">
+            <div class="head">
+                <h2>FREE</h2>
+            </div>
+            <P>"It's on us until we earn your trust."</P>
+        </div>
+        <div class="card" id="card-2">
+            <div class="head">
+                <h2>BASIC</h2>
+            </div>
+            <div class="pricing">
+                <p><span class="price">$173/</span> <span class="desc">2K Urls</span></p>
+                <p><span class="price">$390/</span> <span class="desc">10K Urls</span></p>
+                <p><span class="price">$803/</span> <span class="desc">50K Urls</span></p>
+            </div>
+            <div class="details">
+                <ul class="colored-bullets">
+                    <li>Dynamic Value Insights</li>
+                    <li>Competitive Market Pulse</li>
+                    <li>Customer Cost Compass</li>
+                    <li>Actionable Pricing Metrics</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card" id="card-3">
+            <div class="head">
+                <h2>ADVANCED</h2>
+            </div>
+            <div class="pricing">
+                <p><span class="price">$309/</span> <span class="desc">2K Urls</span></p>
+                <p><span class="price">$883/</span> <span class="desc">10K Urls</span></p>
+                <p><span class="price">$1549/</span> <span class="desc">50K Urls</span></p>
+            </div>
+            <div class="details">
+                <ul class="colored-bullets">
+                    <li>Price History Hub</li>
+                    <li>Integrated Analytical Engine</li>
+                    <li>Web Intelligence Extractor</li>
+                    <li>Visual Data Mapper</li>
+                    <li>Custom Data Grabber</li>
+                    <li>Product Evolution Tracker</li>
+                    <li>Smart Store Watch</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card" id="card-4">
+            <div class="head">
+                <h2>CUSTOMISED</h2>
+            </div>
+            <P>"50K+ URLs?<br>Let's tailor a plan for you."</P>
+        </div>
+    </section>
+    <section class="sec-6" id="sec-6">
+        <div class="col" id="services">
+            <h3>Services</h3>
+            <p>Competitor Insights</p>
+            <p>Competitor Insights Analysis</p>
+        </div>
+        <div class="col" id="resources">
+            <h3>Resources</h3>
+            <p>Data Analysis</p>
+            <p>Market Research</p>
+            <p>Performance Metrics</p>
+            <p>Inventory Insights</p>
+        </div>
+        <div class="col" id="pricing">
+            <h3>Pricing</h3>
+            <p>Basic Plan</p>
+            <p>Advanced Plan</p>
+            <p>Custom Plan</p>
+        </div>
+        <div class="col" id="contact">
+            <img src="../static/transparent_logo.png" alt="">
+            <div class="footer-text">
+                <h1>Price Prive</h1>
+                <p>support@priceprive.com</p>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

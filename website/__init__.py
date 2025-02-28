@@ -11,7 +11,7 @@ def create_app():
     app.config['SECRET_KEY']='pp'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:priceprive%402024@localhost:5432/priceprive'
 
-    #app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:Ritika%402001@localhost:5432/priceprive'
+
     db.init_app(app)
 
 
@@ -34,20 +34,6 @@ def create_app():
             print(f"Error creating tables: {str(e)}")
 
 
-
-        #     db.create_all()
-        #     print("Tables created successfully")
-        # except Exception as e:
-        #     print(f"Error creating tables: {str(e)}")
-        # db.create_all()
-
     return app
 
-    # create_database(app)
-
-    # return app
-
-# def create_database(app):
-#     if not path.exists('website/' + DB_NAME):
-#         db.create_all(app=app)
-#         print('Created Database!')
+   

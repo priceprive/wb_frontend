@@ -1,0 +1,403 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header img {
+    height: 60px;
+    width: auto;
+}
+
+header nav {
+  display: flex;
+  gap: 40px;
+}
+
+header nav a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+header nav a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4a375a;
+  transition: width 0.3s ease;
+}
+
+header nav a:hover:after {
+  width: 100%;
+}
+
+header nav a:hover {
+  color: #4a375a; /* Change color on hover */
+}
+
+#sec-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(50% - 30px);
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+
+.box-1 img {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s; /* Delayed fade-in animation */
+}
+
+.box-1 .text-1 {
+    padding: 15px;
+}
+
+.box-1 .text-1 h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.box-1 .text-1 p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#sec-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 50px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 1s; /* Delayed fade-in animation */
+}
+
+#sec-2 img {
+    max-width: 100%;
+    height: auto;
+    padding: 20px 0;
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 1.5s; /* Delayed fade-in animation */
+}
+
+.box-2 .text-2 h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.box-2 .text-2 p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.box2-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.box2-2 .img-box-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-box-2 img {
+    width: 45%;
+    max-width: 480px;
+    height: auto;
+    min-width: 280px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 2s; /* Delayed fade-in animation */
+}
+
+.box2-2 .textbox-2 h1 {
+    font-size: 22px;
+}
+
+.box2-2 .textbox-2 p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#sec-6 {
+    margin-top: 60px;
+    background-color: #482c24;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    justify-content: space-between;
+    opacity: 0;
+    animation: fadeIn 1s forwards 2.5s; /* Delayed fade-in animation */
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 30px;
+    min-width: 200px;
+    flex: 1;
+}
+
+.col h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.col p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+#services {
+    margin-left: 20px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#contact .footer-text h1 {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+}
+
+#contact .footer-text p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Desktop (Large screens) */
+@media (min-width: 1201px) {
+    .box-1 {
+        width: calc(50% - 30px);
+    }
+    
+    .img-box-2 img {
+        width: 45%;
+    }
+    
+    header nav a {
+        font-size: 18px;
+    }
+    
+    .box-1 .text-1 h1 {
+        font-size: 26px;
+    }
+}
+
+/* Laptop and smaller desktops */
+@media (max-width: 1200px) and (min-width: 769px) {
+    header nav {
+        gap: 20px;
+    }
+    
+    header nav a {
+        font-size: 16px;
+    }
+    
+    .box-1 .text-1 h1 {
+        font-size: 22px;
+    }
+    
+    .box-1 .text-1 p {
+        font-size: 14px;
+    }
+    
+    .img-box-2 img {
+        width: 45%;
+    }
+    
+    #contact .footer-text h1 {
+        font-size: 22px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    header img {
+        margin-bottom: 15px;
+    }
+    
+    header nav {
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    header nav a {
+        font-size: 16px;
+    }
+    
+    #sec-1 {
+        margin: 20px;
+    }
+    
+    .box-1 {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .box-1 .text-1 h1 {
+        font-size: 20px;
+    }
+    
+    #sec-2 {
+        margin: 20px;
+    }
+    
+    .img-box-2 img {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    #sec-6 {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    
+    .col {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    #services, #resources, #pricing {
+        margin-left: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    header {
+        padding: 10px;
+    }
+    
+    header img {
+        height: 50px;
+    }
+    
+    header nav {
+        gap: 10px;
+    }
+    
+    header nav a {
+        font-size: 14px;
+    }
+    
+    #sec-1 {
+        margin: 15px;
+        gap: 20px;
+    }
+    
+    .box-1 .text-1 h1 {
+        font-size: 18px;
+    }
+    
+    .box-1 .text-1 p {
+        font-size: 13px;
+    }
+    
+    #sec-2 img {
+        padding: 10px 0;
+    }
+    
+    .box-2 .text-2 h1 {
+        font-size: 20px;
+    }
+    
+    .img-box-2 {
+        gap: 15px;
+    }
+    
+    #contact img {
+        width: 80px;
+    }
+    
+    #contact .footer-text h1 {
+        font-size: 18px;
+    }
+    
+    #contact .footer-text p {
+        font-size: 14px;
+    }
+    
+    .col h3 {
+        font-size: 18px;
+    }
+    
+    .col p {
+        font-size: 14px;
+    }
+}

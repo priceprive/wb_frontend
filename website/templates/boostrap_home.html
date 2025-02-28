@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PricePrive</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Custom styles that Bootstrap doesn't cover */
+        body {
+            overflow-x: hidden;
+        }
+
+        #sec-1 {
+            background-color: #44362d;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px; 
+            color: white;
+        }
+
+        #sec-1 .content-1 h1 {
+            font-size: 5vh;
+            line-height: 1.3;
+        }
+
+        #sec-1 .content-1 p {
+            font-size: 3vh;
+            word-spacing: 4px;
+        }
+
+        .button-1 {
+            margin-top: 40px;
+            width: 100px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid white;
+            background-color: #44362d;
+        }
+
+        .button-1 .button {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container .box {
+            background-color: #716157;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        #sec-2 {
+            background-color: white;
+            padding: 50px 0;
+        }
+
+        #sec-2 .content-2 h1 {
+            font-size: 6.4vh;
+        }
+
+        #sec-3 {
+            background-color: #f5e1e1;
+            padding: 50px 0;
+        }
+
+        .image3-1 {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .text-box-1 {
+            position: absolute;
+            bottom: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            padding: 20px;
+            width: 80%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #sec-4 {
+            padding: 50px 0;
+        }
+
+        .rating {
+            text-align: center;
+        }
+
+        .rating .profile img {
+            width: 100%;
+            height: auto;
+        }
+
+        #sec-5 {
+            padding: 50px 0;
+        }
+
+        #sec-5 .image-5 img {
+            border-radius: 30px;
+        }
+
+        #sec-6 {
+            background-color: #f4d6d6;
+            padding: 50px 0;
+        }
+
+        #sec-6 .col {
+            color: black;
+        }
+
+        #sec-6 .col h3 {
+            margin-bottom: 20px;
+        }
+
+        #sec-6 .col p {
+            margin: 5px 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3">
+        <img src="../static/Logo.jpeg" alt="Logo" style="width: 80px; height: 80px;">
+        <nav class="d-flex gap-4">
+            <a href="{{ url_for('auth.competitor') }}" class="text-dark text-decoration-none">Home</a>
+            <a href="{{ url_for('auth.services') }}" class="text-dark text-decoration-none">Services</a>
+            <a href="{{ url_for('auth.report') }}" class="text-dark text-decoration-none">Reports</a>
+            <a href="{{ url_for('auth.contact') }}" class="text-dark text-decoration-none">Contacts</a>
+            <a href="{{ url_for('auth.pricing') }}" class="text-dark text-decoration-none">Pricing</a>
+        </nav>
+    </header>
+
+    <section id="sec-1" class="text-center">
+        <div class="content-1">
+            <h1>Unlock Insights from <br> Data with PricePrive</h1>
+            <p>"Turning Competitor Data into Your Competitive Edge."</p>
+        </div>
+        <div class="button-1">
+            <a href="/contact" class="button">Get Started</a>
+        </div>
+        <div class="container mt-5">
+            <div class="row gap-4 justify-content-center">
+                <div class="col-md-3 box">
+                    <h1>Data Analysis Tools</h1>
+                    <p>Comprehensive insights on stock, price, and inventory.</p>
+                </div>
+                <div class="col-md-3 box">
+                    <h1>Insight Reports</h1>
+                    <p>Tailored reports for informed decision-making.</p>
+                </div>
+                <div class="col-md-3 box">
+                    <h1>Market Analysis</h1>
+                    <p>Monitor market trends and stay competitive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-2" class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-6 content-2">
+                <h1>Unlock Competitor <br>Insights with<br> Priceprive</h1>
+                <p>At Priceprive, we empower businesses by providing comprehensive competitor insights through data scraping
+                    and analysis, delivering valuable reports on stock, pricing, and inventory metrics.</p>
+            </div>
+            <div class="col-md-6 image-2">
+                <img src="../static/contact.jpg" alt="Contact" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-3" class="text-center">
+        <div class="content-3">
+            <h1>Competitor Insights Analysis</h1>
+            <p>We provide comprehensive reports on competitor metrics including stock levels, pricing, and inventory
+                analysis.</p>
+        </div>
+        <div class="container mt-5">
+            <div class="row gap-4 justify-content-center">
+                <div class="col-md-5 image3-1">
+                    <img src="../static/rpic2.avif" alt="Report 1" class="img-fluid card-image1">
+                    <div class="text-box-1">
+                        <h2>Custom Reports Delivered</h2>
+                        <p>Receive tailored reports that highlight key metrics and trends to help you stay ahead of
+                            competitors.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 image3-1">
+                    <img src="../static/rpic1.avif" alt="Report 2" class="img-fluid card-image2">
+                    <div class="text-box-1">
+                        <h2>Custom Reports Delivered</h2>
+                        <p>Receive tailored reports that highlight key metrics and trends to help you stay ahead of
+                            competitors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-4" class="container">
+        <div class="row gap-4 justify-content-center">
+            <div class="col-md-5 rating">
+                <div class="star">
+                    <p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                </div>
+                <div class="comment">
+                    <p>PricePrive's insights helped us understand our competitors<br>better and improve our pricing strategy
+                        significantly.</p>
+                </div>
+                <div class="profile">
+                    <img src="../static/spic3.jpeg" alt="Profile 1" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-5 rating">
+                <div class="star">
+                    <p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </p>
+                </div>
+                <div class="comment">
+                    <p>The detailed reports provided by PricePrive have been <br>invaluable for our inventory management and
+                        forecasting.</p>
+                </div>
+                <div class="profile">
+                    <img src="../static/spic5.jpeg" alt="Profile 2" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-5" class="container">
+        <div class="content-5 text-center">
+            <h1>Competitor Insights</h1>
+            <p>We provide comprehensive analysis of competitors' stock, pricing, and inventory.</p>
+        </div>
+        <div class="content2-5 mt-5">
+            <div class="row gap-4 justify-content-center">
+                <div class="col-md-5 image-5">
+                    <img src="../static/pic1.jpeg" alt="Data Analysis" class="img-fluid">
+                    <div class="text">
+                        <h1>Data Analysis</h1>
+                        <p>Our detailed reports help businesses make informed decisions based<br> on competitor data.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 image-5">
+                    <img src="../static/rpic3.avif" alt="Market Trends" class="img-fluid">
+                    <div class="text">
+                        <h1>Market Trends</h1>
+                        <p>Stay ahead of the competition with our insightful market trend analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-6" class="container-fluid">
+        <div class="row gap-4 justify-content-center p-5">
+            <div class="col-md-2 col">
+                <h3>Services</h3>
+                <p>Competitor Insights</p>
+                <p>Competitor Insights Analysis</p>
+            </div>
+            <div class="col-md-2 col">
+                <h3>Resources</h3>
+                <p>Data Analysis</p>
+                <p>Market Research</p>
+                <p>Performance Metrics</p>
+                <p>Inventory Insights</p>
+            </div>
+            <div class="col-md-2 col">
+                <h3>Pricing</h3>
+                <p>Basic Plan</p>
+                <p>Advanced Plan</p>
+                <p>Custom Plan</p>
+            </div>
+            <div class="col-md-2 col">
+                <img src="../static/transparent_logo.png" alt="Logo" class="img-fluid">
+                <div class="footer-text">
+                    <h1>Price Prive</h1>
+                    <p>support@priceprive.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
